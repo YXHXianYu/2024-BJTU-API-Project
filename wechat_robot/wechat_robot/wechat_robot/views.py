@@ -34,7 +34,6 @@ def get_access_token():
     if time.time() > expire_time:
         url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={}&secret={}'.format(appid, secret)
         ans = json.loads(requests.get(url).text)
-        print(ans)
         access_token = ans["access_token"]
         expire_time = ans["expires_in"] + time.time()
     return access_token
@@ -49,15 +48,17 @@ def wechat_main(request):
         nonce = request.GET.get('nonce', None)
         echostr = request.GET.get('echostr', None)
 
-        hashlist = [token, timestamp, nonce]
-        hashlist.sort()
-        hashstr = ''.join(hashlist)
-        hashstr = hashlib.sha1(bytes(hashstr, encoding='utf-8')).hexdigest()
-        if hashstr == signature:
-            return HttpResponse(echostr)
-        else:
-            print("ERROR")
-            return HttpResponse("ERROR")
+        return HttpResponse(echostr)
+
+        # hashlist = [token, timestamp, nonce]
+        # hashlist.sort()
+        # hashstr = ''.join(hashlist)
+        # hashstr = hashlib.sha1(bytes(hashstr, encoding='utf-8')).hexdigest()
+        # if hashstr == signature:
+        #     return HttpResponse(echostr)
+        # else:
+        #     print("ERROR")
+        #     return HttpResponse("ERROR")
     else:
         xmldata = ET.fromstring(request.body)
         msg_type = xmldata.find('MsgType').text
