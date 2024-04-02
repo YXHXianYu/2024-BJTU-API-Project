@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'aliyun.yxhxianyu.fun',
+    '60.205.253.222',
     'localhost',
     '127.0.0.1',
 ]
