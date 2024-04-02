@@ -34,6 +34,7 @@ def get_access_token():
     if time.time() > expire_time:
         url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={}&secret={}'.format(appid, secret)
         ans = json.loads(requests.get(url).text)
+        print(ans)
         access_token = ans["access_token"]
         expire_time = ans["expires_in"] + time.time()
     return access_token
