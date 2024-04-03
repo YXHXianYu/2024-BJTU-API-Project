@@ -8,6 +8,8 @@ import time
 import requests
 import random
 
+from .resolver import resolve
+
 token = "11uyBbVRtGNZa8poIT8jYrQhzkz"
 appid = "wx16d150eb712b1aa1"
 secret = "cf6ec6059c92ae11a049a4dd2a9174ed"
@@ -48,7 +50,8 @@ def wechat_distributor(request):
 
     if msg_type == 'text':
         content = xmldata.find('Content').text
-        content = deal_with_content(content, from_user)
+        # content = deal_with_content(content, from_user)
+        content = resolve(from_user, content)
         return HttpResponse(wechat_return_data(to_user=from_user, from_user=to_user, content=content))
 
     elif msg_type == 'image':  # 直接把图片保存下来并且发回去同样的
