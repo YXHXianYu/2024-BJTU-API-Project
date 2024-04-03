@@ -42,8 +42,20 @@ def resolve(user_state, content):
         for key, value in filter.items():
             query &= Q(**{f"{key}__exact": value})
 
-        ans = '{' + '\n'
-        for offer in Offer.objects.filter(query):
+        results = Offer.objects.filter(query)
+
+        if 'page' in tokens:
+            page = 1
+            page_min = 0
+            page_max = 10
+        else:
+            page = max(tokens['page'], 1)
+            page_min = (tokens['page'] - 1) * RECORDS_PER_PAGE 
+            page_max = tokens['page'] * RECORDS_PER_PAGE 
+
+        ans = f'第{page}页'
+        ans += '{' + '\n'
+        for offer in results:
             ans += str(offer) + '\n'
         ans += '}'
 
