@@ -8,8 +8,9 @@ from .constants import *
 # === Vars ===
 
 patterns = {
+    'help': r'help\s*',
     'commit': r'commit\s+(\S+)\s+(\S+)\s+(\S+)\s+(\d+)(?:\s+(\S+))?(?:\s+(\S+))?',
-    'query': r'query(?:\s+(?:--company|-com)\s+(\S+))?(?:\s+(?:--city|-ci)\s+(\S+))?(?:\s+(?:--position|-p|-po|-pos)\s+(\S+))?',
+    'query': r'query(?:\s+(?:--company|-co)\s+(\S+))?(?:\s+(?:--city|-ci)\s+(\S+))?(?:\s+(?:--position|-po)\s+(\S+))?(?:\s+(?:--page|-pa)\s+(\S+))?',
 }
 
 # === Resolve ===
@@ -20,7 +21,9 @@ def resolve(user_state, content):
     if tokens is None:
         return MESSAGE_UNKNOWN_COMMAND
 
-    if tokens['command'] == 'commit':
+    if tokens['command'] == 'help':
+        return MESSAGE_HELP
+    elif tokens['command'] == 'commit':
         offer = Offer(
             company=tokens['company'],
             city=tokens['city'],
@@ -39,9 +42,10 @@ def resolve(user_state, content):
         for key, value in filter.items():
             query &= Q(**{f"{key}__exact": value})
 
-        ans = ""
+        ans = '{' + '\n'
         for offer in Offer.objects.filter(query):
             ans += str(offer) + '\n'
+        ans += '}'
 
         return ans
 
@@ -52,7 +56,11 @@ def tokenize(command):
         match = re.match(pattern, command)
         if match:
             params = match.groups()
-            if name == 'commit':
+            if name == 'help':
+                return {
+                    'command': 'help'
+                }
+            elif name == 'commit':
                 return {
                     'command': 'commit',
                     'company': params[0],
@@ -68,6 +76,7 @@ def tokenize(command):
                     'company': params[0] if params[0] else None,
                     'city': params[1] if params[1] else None,
                     'position': params[2] if params[2] else None,
+                    'page': params[3] if params[3] else None,
                 }
 
 # === Test ===
