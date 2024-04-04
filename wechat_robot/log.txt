@@ -1,0 +1,965 @@
+Watching for file changes with StatReloader
+[04/Apr/2024 09:52:38,363] - Broken pipe from ('167.94.145.59', 48008)
+Not Found: /
+[04/Apr/2024 09:52:41] "GET / HTTP/1.1" 404 2175
+[04/Apr/2024 09:52:41,669] - Broken pipe from ('167.94.145.59', 51408)
+[04/Apr/2024 09:52:44] "GET /admin/ HTTP/1.1" 200 10077
+[04/Apr/2024 09:52:44] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+Not Found: /
+[04/Apr/2024 09:52:44] "GET / HTTP/1.1" 404 2172
+[04/Apr/2024 09:52:45] code 505, message Invalid HTTP version (2.0)
+[04/Apr/2024 09:52:45] "PRI * HTTP/2.0" 505 -
+[04/Apr/2024 09:52:48] "GET /admin/main/user/ HTTP/1.1" 200 8977
+[04/Apr/2024 09:52:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Apr/2024 09:54:56] "POST /wechat/?signature=63706b143c2bcd06c5cf7dec0c07ce22aadd7503&timestamp=1712224495&nonce=185176035&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 292
+[04/Apr/2024 09:54:56] "POST /wechat/?signature=746978ffa8262d615671a680d1f91cbec86524e0&timestamp=1712224495&nonce=961019487&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:54:56] "POST /wechat/?signature=65ee939376ce6a1f63f3c86e54b976a2819153eb&timestamp=1712224496&nonce=33851405&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 291
+[04/Apr/2024 09:54:56] "POST /wechat/?signature=c31a07e2c6e7f1c50d4ccc8e94d5b765f98d2296&timestamp=1712224496&nonce=107813843&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:54:56] "POST /wechat/?signature=bcb5c6398fc7b0fb854d3debd7520fd38d2703d1&timestamp=1712224496&nonce=333166936&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:54:56] "POST /wechat/?signature=cb69f1e8c672caa35d871a424d1e702b0958ae7f&timestamp=1712224496&nonce=564709968&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 292
+[04/Apr/2024 09:54:57] "POST /wechat/?signature=fc79f063a9f24a6b36350fb6a7a6d60ff434de1f&timestamp=1712224497&nonce=480932302&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 292
+[04/Apr/2024 09:54:57] "POST /wechat/?signature=934fdbc96a9f849c6b797c2bf81e428f41959eaf&timestamp=1712224497&nonce=732632955&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:54:57] "POST /wechat/?signature=ccb5ff5da8b85d6da52bd9c383fdd880e79058d1&timestamp=1712224497&nonce=1909556707&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:54:57] "POST /wechat/?signature=af17c7c7312192bbb24fde8252cecdd63921af53&timestamp=1712224497&nonce=1854670460&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:54:58] "POST /wechat/?signature=3879adeaa4337816fd4af129ec9525216e4af773&timestamp=1712224497&nonce=1948765298&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 292
+[04/Apr/2024 09:54:58] "POST /wechat/?signature=ef732df7501feb065df9a0bddd5b8e72e316fa62&timestamp=1712224498&nonce=1576431900&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:54:58] "POST /wechat/?signature=96f8d50faf0971792fc61605e0108279ae675680&timestamp=1712224498&nonce=177176292&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:54:58] "POST /wechat/?signature=3a8e880ee3cc5c8c5fca2e3bee1c83518569600e&timestamp=1712224498&nonce=856331007&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:54:59] "POST /wechat/?signature=0037ac526584c3711f05954a9126d8fda1b4b37a&timestamp=1712224498&nonce=357277424&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 292
+[04/Apr/2024 09:54:59] "POST /wechat/?signature=21336923b4061e8c3c45dc651f9ab31b27cbabe6&timestamp=1712224499&nonce=1879845871&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:54:59] "POST /wechat/?signature=0e39cf8ad4959847955dd388cd9acca804d581c7&timestamp=1712224499&nonce=811087591&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:54:59] "POST /wechat/?signature=8c12a4607b68451e925ba1ecf735b3c2cfd5600f&timestamp=1712224499&nonce=1719314914&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:54:59] "POST /wechat/?signature=158938d4856b1a59dc753a18fa8f260c1cde4d5c&timestamp=1712224499&nonce=1941678127&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:55:00] "POST /wechat/?signature=01b6efb2dc583aefc92c6068054032f5660ea88d&timestamp=1712224500&nonce=1021082359&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:55:00] "POST /wechat/?signature=858122f86aa28dbb5348c815948bc43273d1cdc3&timestamp=1712224500&nonce=1510906674&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 292
+[04/Apr/2024 09:55:00] "POST /wechat/?signature=dc81375b9c1d70f94fdc0156fa7adf7d8f458204&timestamp=1712224500&nonce=9579419&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 292
+[04/Apr/2024 09:55:00] "POST /wechat/?signature=330c5436a3d2af2319377287f523511e5ce0ab3d&timestamp=1712224500&nonce=1282092389&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:55:01] "POST /wechat/?signature=4e0c74300cb47cc9b3f03928eaede9d6edf64b43&timestamp=1712224501&nonce=825776224&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:55:01] "POST /wechat/?signature=03fe37ca4a89516ec327c3b96331cf0ad252c710&timestamp=1712224501&nonce=1251830236&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:55:01] "POST /wechat/?signature=ac7981814dc8d771d6988d32ea9c56360a512e0d&timestamp=1712224501&nonce=53355809&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:55:01] "POST /wechat/?signature=b9b43bad39676ee8d1054d2abb55e2101b6879fc&timestamp=1712224501&nonce=2068763275&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:55:02] "POST /wechat/?signature=dab9cb17ecb6fff11917ba3957e13a58697d29a1&timestamp=1712224502&nonce=1377939276&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+[04/Apr/2024 09:55:02] "POST /wechat/?signature=3e88ec215e9807c9091fa3e8c1ddd90e959378c2&timestamp=1712224502&nonce=940788398&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:02] "POST /wechat/?signature=1b5d6a2388db928b9409fe0cb0c2d732992601ce&timestamp=1712224502&nonce=1164786082&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 04, 2024 - 09:52:20
+Django version 5.0.3, using settings 'wechat_robot.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:02] "POST /wechat/?signature=1b5d6a2388db928b9409fe0cb0c2d732992601ce&timestamp=1712224502&nonce=1164786082&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:02] "POST /wechat/?signature=1b5d6a2388db928b9409fe0cb0c2d732992601ce&timestamp=1712224502&nonce=1164786082&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+[04/Apr/2024 09:55:02] "POST /wechat/?signature=780ace38cfaa327e7d1355f4bb4a07b87c6ca254&timestamp=1712224502&nonce=1482216223&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:03] "POST /wechat/?signature=780ace38cfaa327e7d1355f4bb4a07b87c6ca254&timestamp=1712224502&nonce=1482216223&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:03] "POST /wechat/?signature=403272bc1e32fb5ca05972bbaf16093771cb7898&timestamp=1712224503&nonce=513334792&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:03] "POST /wechat/?signature=403272bc1e32fb5ca05972bbaf16093771cb7898&timestamp=1712224503&nonce=513334792&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+[04/Apr/2024 09:55:03] "POST /wechat/?signature=780ace38cfaa327e7d1355f4bb4a07b87c6ca254&timestamp=1712224502&nonce=1482216223&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:03] "POST /wechat/?signature=a487a7733ff79107fa368b0d0a71ad80e32470ba&timestamp=1712224503&nonce=684032168&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:03] "POST /wechat/?signature=403272bc1e32fb5ca05972bbaf16093771cb7898&timestamp=1712224503&nonce=513334792&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69400
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:03] "POST /wechat/?signature=bed813c24ffb9884dd0bc412bdd72fa016d6f9b9&timestamp=1712224503&nonce=911946408&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:03] "POST /wechat/?signature=a487a7733ff79107fa368b0d0a71ad80e32470ba&timestamp=1712224503&nonce=684032168&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:03] "POST /wechat/?signature=bed813c24ffb9884dd0bc412bdd72fa016d6f9b9&timestamp=1712224503&nonce=911946408&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69400
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:03] "POST /wechat/?signature=a487a7733ff79107fa368b0d0a71ad80e32470ba&timestamp=1712224503&nonce=684032168&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:03] "POST /wechat/?signature=dedc035bd3c6c625f4e0d3df41b6590e2a3d9c7c&timestamp=1712224503&nonce=1507759700&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:04] "POST /wechat/?signature=bed813c24ffb9884dd0bc412bdd72fa016d6f9b9&timestamp=1712224503&nonce=911946408&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:04] "POST /wechat/?signature=dedc035bd3c6c625f4e0d3df41b6590e2a3d9c7c&timestamp=1712224503&nonce=1507759700&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:04] "POST /wechat/?signature=c64b8d7bbfef445c14c64fdc8d5239d2f50e8390&timestamp=1712224504&nonce=916834385&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:04] "POST /wechat/?signature=d75d74dd2cf0750f6f5f7eaf6e1086cc6d8ac5a1&timestamp=1712224504&nonce=1750770672&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:04] "POST /wechat/?signature=f16794fd12bb9c751e857c758329f35d37736b73&timestamp=1712224504&nonce=240549997&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:04] "POST /wechat/?signature=7f13d5fb1329200f6aa016ff6a96b08a29c1052e&timestamp=1712224504&nonce=661487151&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:04] "POST /wechat/?signature=d75d74dd2cf0750f6f5f7eaf6e1086cc6d8ac5a1&timestamp=1712224504&nonce=1750770672&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:04] "POST /wechat/?signature=f16794fd12bb9c751e857c758329f35d37736b73&timestamp=1712224504&nonce=240549997&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69400
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:05] "POST /wechat/?signature=104ab328cc3b4e43ce466cd7266738857c000fba&timestamp=1712224504&nonce=2074457439&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:05] "POST /wechat/?signature=d18e0f2a3ea2a0e247881d954266bc3b0638cdfc&timestamp=1712224505&nonce=2071012021&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:05] "POST /wechat/?signature=dedc035bd3c6c625f4e0d3df41b6590e2a3d9c7c&timestamp=1712224503&nonce=1507759700&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:05] "POST /wechat/?signature=104ab328cc3b4e43ce466cd7266738857c000fba&timestamp=1712224504&nonce=2074457439&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:05] "POST /wechat/?signature=c64b8d7bbfef445c14c64fdc8d5239d2f50e8390&timestamp=1712224504&nonce=916834385&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69400
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:05] "POST /wechat/?signature=6fc58260aaf7d0308ce6eb39e2556373049fc195&timestamp=1712224505&nonce=1201273274&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:05] "POST /wechat/?signature=f16794fd12bb9c751e857c758329f35d37736b73&timestamp=1712224504&nonce=240549997&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69400
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:05] "POST /wechat/?signature=9421e65e45e22fd4332a49a14250aa439f87727d&timestamp=1712224505&nonce=1071696055&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Command query --city 不存在 --position 为了避免系统响应消息太多 was tokenized to {'command': 'query', 'company': None, 'city': '不存在', 'position': '为了避免系统响应消息太多', 'page': None, 'sort-new': False, 'sort-salary': False}
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:06] "POST /wechat/?signature=d18e0f2a3ea2a0e247881d954266bc3b0638cdfc&timestamp=1712224505&nonce=2071012021&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:06] "POST /wechat/?signature=6fc58260aaf7d0308ce6eb39e2556373049fc195&timestamp=1712224505&nonce=1201273274&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+[04/Apr/2024 09:55:06] "POST /wechat/?signature=45d640126eb623afa4da75093bc7db5bd5a34f15&timestamp=1712224505&nonce=876449567&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:06] "POST /wechat/?signature=7f13d5fb1329200f6aa016ff6a96b08a29c1052e&timestamp=1712224504&nonce=661487151&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:06] "POST /wechat/?signature=9421e65e45e22fd4332a49a14250aa439f87727d&timestamp=1712224505&nonce=1071696055&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:06] "POST /wechat/?signature=d18e0f2a3ea2a0e247881d954266bc3b0638cdfc&timestamp=1712224505&nonce=2071012021&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:07] "POST /wechat/?signature=d75d74dd2cf0750f6f5f7eaf6e1086cc6d8ac5a1&timestamp=1712224504&nonce=1750770672&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:07] "POST /wechat/?signature=6fc58260aaf7d0308ce6eb39e2556373049fc195&timestamp=1712224505&nonce=1201273274&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+[04/Apr/2024 09:55:07] "POST /wechat/?signature=556a78a0560da543bda11d2143326e33ecc7148a&timestamp=1712224507&nonce=1789041365&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:07] "POST /wechat/?signature=104ab328cc3b4e43ce466cd7266738857c000fba&timestamp=1712224504&nonce=2074457439&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:07] "POST /wechat/?signature=4e7f44849651648b400a08d76ff29f15f4008bf9&timestamp=1712224507&nonce=2110331959&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:07] "POST /wechat/?signature=c64b8d7bbfef445c14c64fdc8d5239d2f50e8390&timestamp=1712224504&nonce=916834385&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69400
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:08] "POST /wechat/?signature=7fb44768da921c454e53528e7a04de2212110e67&timestamp=1712224507&nonce=1589752726&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:08] "POST /wechat/?signature=a0ec95e914f0a52d8bf8515ebcf18da68bd8b980&timestamp=1712224508&nonce=1141903755&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:08] "POST /wechat/?signature=45d640126eb623afa4da75093bc7db5bd5a34f15&timestamp=1712224505&nonce=876449567&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+[04/Apr/2024 09:55:08] "POST /wechat/?signature=3d1c05d15379d129235221e42424643e9530eb69&timestamp=1712224508&nonce=950402397&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:08] "POST /wechat/?signature=4e7f44849651648b400a08d76ff29f15f4008bf9&timestamp=1712224507&nonce=2110331959&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+[04/Apr/2024 09:55:09] "POST /wechat/?signature=556a78a0560da543bda11d2143326e33ecc7148a&timestamp=1712224507&nonce=1789041365&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:09] "POST /wechat/?signature=4e7f44849651648b400a08d76ff29f15f4008bf9&timestamp=1712224507&nonce=2110331959&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:09] "POST /wechat/?signature=9421e65e45e22fd4332a49a14250aa439f87727d&timestamp=1712224505&nonce=1071696055&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:09] "POST /wechat/?signature=7f13d5fb1329200f6aa016ff6a96b08a29c1052e&timestamp=1712224504&nonce=661487151&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:09] "POST /wechat/?signature=3d1c05d15379d129235221e42424643e9530eb69&timestamp=1712224508&nonce=950402397&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69400
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:09] "POST /wechat/?signature=a0ec95e914f0a52d8bf8515ebcf18da68bd8b980&timestamp=1712224508&nonce=1141903755&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:09] "POST /wechat/?signature=556a78a0560da543bda11d2143326e33ecc7148a&timestamp=1712224507&nonce=1789041365&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:10] "POST /wechat/?signature=3d1c05d15379d129235221e42424643e9530eb69&timestamp=1712224508&nonce=950402397&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69400
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:10] "POST /wechat/?signature=a0ec95e914f0a52d8bf8515ebcf18da68bd8b980&timestamp=1712224508&nonce=1141903755&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+[04/Apr/2024 09:55:11] "POST /wechat/?signature=45d640126eb623afa4da75093bc7db5bd5a34f15&timestamp=1712224505&nonce=876449567&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69399
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:12] "POST /wechat/?signature=7fb44768da921c454e53528e7a04de2212110e67&timestamp=1712224507&nonce=1589752726&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69408
+Internal Server Error: /wechat/
+Traceback (most recent call last):
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 21, in wechat_main
+    return wechat_distributor(request)
+  File "/root/2024-BJTU-API-Project/wechat_robot/main/views.py", line 40, in wechat_distributor
+    content = MESSAGE_CIALLO + '\n' + wechat_command_distributor(from_user, tokens)
+TypeError: can only concatenate str (not "NoneType") to str
+[04/Apr/2024 09:55:12] "POST /wechat/?signature=7fb44768da921c454e53528e7a04de2212110e67&timestamp=1712224507&nonce=1589752726&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 500 69409
+[04/Apr/2024 09:57:03] "GET /admin/main/user/ HTTP/1.1" 200 8977
+[04/Apr/2024 09:57:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Apr/2024 09:58:01] "GET /admin/main/user/1/change/ HTTP/1.1" 200 11138
+[04/Apr/2024 09:58:01] "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+[04/Apr/2024 09:58:01] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[04/Apr/2024 09:58:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Apr/2024 09:58:01] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+[04/Apr/2024 09:58:01] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[04/Apr/2024 09:58:10] "POST /admin/main/user/1/change/ HTTP/1.1" 200 11338
+[04/Apr/2024 09:58:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Apr/2024 09:58:17] "POST /admin/main/user/1/change/ HTTP/1.1" 302 0
+[04/Apr/2024 09:58:17] "GET /admin/main/user/ HTTP/1.1" 200 9203
+[04/Apr/2024 09:58:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[04/Apr/2024 09:58:34] "POST /wechat/?signature=b30515fe99845d9fa8e9a7a1c4406b42023847d1&timestamp=1712224714&nonce=1895336152&openid=oOBX96SvQKCjV5Zv2NOHNdnaG9P4 HTTP/1.1" 200 293
