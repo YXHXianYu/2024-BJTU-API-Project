@@ -74,7 +74,7 @@ def wechat_command_distributor(from_user, tokens):
         return ans
     
     elif tokens['command'] == 'group-commit':
-        create_offers(tokens['offers'], from_user)
+        batch_create_offers(tokens['offers'], from_user)
         return MESSAGE_COMMIT_SUCCESS
     
     else:

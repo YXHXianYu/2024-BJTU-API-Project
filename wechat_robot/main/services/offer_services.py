@@ -114,7 +114,7 @@ def replace_offer(args):
 
 # === 修改方法，批量修改 ===
 
-def create_offers(args, username):
+def batch_create_offers(args, username):
     '''根据对应信息创建多个新的Offer'''
 
     user = User.objects.filter(username=username).first()
@@ -131,7 +131,7 @@ def create_offers(args, username):
 
     return RETURN_STATE_SUCCESS
 
-def update_offers(args):
+def batch_update_offers(args):
     '''根据Filter，更新所有匹配的Offer'''
 
     results = list_offers(args)
@@ -146,7 +146,7 @@ def update_offers(args):
 
     return RETURN_STATE_SUCCESS
 
-def delete_offers(args):
+def batch_delete_offers(args):
     '''根据Filter，删除所有匹配的Offer'''
 
     results = list_offers(args)
@@ -154,7 +154,7 @@ def delete_offers(args):
 
     return RETURN_STATE_SUCCESS
 
-def replace_offers(args):
+def batch_replace_offers(args):
     '''根据Filter，整体替换所有匹配的Offer'''
 
     results = list_offers(args)
