@@ -1,0 +1,15 @@
+wechat:
+  token: BzDKe4AhJPvxYi2yEl2gMjCwHX6x0SMF
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://sepbifang.mysql.rds.aliyuncs.com:3306/wechat?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: heyi
+    password: heyi@123
+
+
+server:
+  port: 80
+
+
