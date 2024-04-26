@@ -12,9 +12,9 @@ import org.slf4j.LoggerFactory;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;
 
 import static java.lang.Math.max;
@@ -36,6 +36,9 @@ public class Controller {
     private final AtomicLong requestCounter = new AtomicLong(0);
     private final AtomicLong requestTimeSum = new AtomicLong(0);
 
+    private final ArrayList<AtomicLong> requestSubCounter = new ArrayList<>(10){{for(int i = 0; i < 10; i++) add(new AtomicLong(0));}};
+    private final ArrayList<AtomicLong> requestSubTimeSum = new ArrayList<>(10){{for(int i = 0; i < 10; i++) add(new AtomicLong(0));}};
+
     /* ----- ----- Student ----- ----- */
 
     /**
@@ -43,16 +46,16 @@ public class Controller {
      */
     @PostMapping("/students")
     public String createStudent(@RequestBody HashMap<String, Object> student) {
-        return Utils.getResponse(410, "This API is disabled");
-//        try {
-//            return studentService.insertStudent(
-//                    (String) student.get("name"),
-//                    (Integer) student.get("gender"),
-//                    (Integer) student.get("age")
-//            );
-//        } catch (Exception e) {
-//            return Utils.getResponse(400, "Bad Request");
-//        }
+//        return Utils.getResponse(410, "This API is disabled");
+        try {
+            return studentService.insertStudent(
+                    (String) student.get("name"),
+                    (Integer) student.get("gender"),
+                    (Integer) student.get("age")
+            );
+        } catch (Exception e) {
+            return Utils.getResponse(400, "Bad Request");
+        }
     }
 
     /**
@@ -74,8 +77,17 @@ public class Controller {
     /**
      * 获取所有学生
      */
+    private static final int QPS_LOG_DURATION = 10000;
+    private static final int QPS_LOG_DURATION_SECONDS = QPS_LOG_DURATION / 1000;
+    private static final int QPS_LIMIT = 10;
     @GetMapping("/students")
     public String getAllStudents(@RequestParam(value = "limit", required = false) Integer limit) {
+
+        long requestCount = requestCounter.get();
+        if (requestCount / QPS_LOG_DURATION_SECONDS >= QPS_LIMIT) {
+            logger.warn("Too Many Requests");
+            return Utils.getResponse(429, "Too Many Requests");
+        }
 
         long startTime = System.currentTimeMillis();
 
@@ -92,27 +104,42 @@ public class Controller {
 
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
-        logger.info("Request received at [{}] processed in {} ms", getDateTime(startTime), duration);
+        logger.info("Request received at [{}] processed in {} ms. User request {} students info", getDateTime(startTime), duration, limitValue);
         requestCounter.incrementAndGet();
         requestTimeSum.addAndGet(duration);
+        requestSubCounter.get((limitValue - 1) / 100).incrementAndGet();
+        requestSubTimeSum.get((limitValue - 1) / 100).addAndGet(duration);
         return response;
     }
 
     /**
      * Log QPS
      */
-    private static final int qpsLogDuration = 5000;
-    @Scheduled(fixedRate = qpsLogDuration)
+    @Scheduled(fixedRate = QPS_LOG_DURATION)
     public void logQPS() {
-        long startTime = System.currentTimeMillis() - qpsLogDuration;
+
+        long startTime = System.currentTimeMillis() - QPS_LOG_DURATION;
         long requestCount = requestCounter.getAndSet(0);
         long requestTime = requestTimeSum.getAndSet(0);
         logger.info(
                 "[{}] QPS: {}; Average Duration: {} ms",
                 getDateTime(startTime),
-                requestCount / 10.0,
+                1.0 * requestCount / QPS_LOG_DURATION_SECONDS,
                 (requestCount == 0 ? 0 : requestTime / requestCount)
         );
+
+        for (int i = 0; i < 10 && i < requestSubCounter.size(); i++) {
+            long subRequestCount = requestSubCounter.get(i).getAndSet(0);
+            long subRequestTime = requestSubTimeSum.get(i).getAndSet(0);
+            logger.info(
+                    "[{}] QPS: {}; Average Duration: {} ms; Limit: {}-{}",
+                    getDateTime(startTime),
+                    1.0 * subRequestCount / QPS_LOG_DURATION_SECONDS,
+                    (subRequestCount == 0 ? 0 : subRequestTime / subRequestCount),
+                    i * 100 + 1,
+                    (i + 1) * 100
+            );
+        }
     }
 
     private String getDateTime(long posixTime) {
