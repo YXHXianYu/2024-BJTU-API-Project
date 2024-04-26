@@ -10,9 +10,7 @@ import org.springframework.dao.DuplicateKeyException;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 /**
  * Student表的服务
@@ -112,13 +110,32 @@ public class StudentService {
 
     /**
      * 查询所有用户（只查询limit个 **随机** 学生信息）
+     * @deprecated
+     */
+    public List<StudentPojo> getStudents_Deprecated(Integer limit) {
+        return studentDao.selectList(
+                new QueryWrapper<StudentPojo>()
+                        .orderBy(true, true, "RAND()")
+                        .last("LIMIT " + limit)
+        );
+    }
+
+    /**
+     * 查询所有用户（只查询limit个 **随机** 学生信息）
      */
     public List<StudentPojo> getStudents(Integer limit) {
-        List<StudentPojo> students = studentDao.selectList(new QueryWrapper<>());
-        if (students.size() <= limit) {
-            return students;
-        } else {
-            return students.subList(0, limit);
-        }
+        return studentDao.selectRandomSample().subList(0, limit);
+//      Long count = studentDao.selectCount(new QueryWrapper<>());
+//      Random random = new Random();
+//      List<Integer> selectedIds = new ArrayList<>();
+//      HashSet<Integer> selectedIdsSet = new HashSet<>();
+//      while (selectedIds.size() < limit) {
+//          int id = random.nextInt(count.intValue());
+//          if (!selectedIdsSet.contains(id)) {
+//              selectedIds.add(id);
+//              selectedIdsSet.add(id);
+//          }
+//      }
+//      return studentDao.selectList(new QueryWrapper<StudentPojo>().in("id", selectedIds));
     }
 }

@@ -1,0 +1,19 @@
+Starting stress test to http://localhost:8080/students ...
+Request #0 success: 155 ms
+Request #1 success: 102 ms
+Request #2 success: 101 ms
+Request #3 success: 111 ms
+Request #4 success: 90 ms
+Request #5 success: 88 ms
+Request #6 success: 95 ms
+Request #7 success: 82 ms
+Request #8 success: 89 ms
+Request #9 success: 79 ms
+ === Stress Test Results === 
+QPS: 1
+Limit: 10000
+Log Time: 10
+Success Times: 10
+Failure Times: 0
+Total time elapsed: 992 ms
+Average time elapsed: 99.2 ms

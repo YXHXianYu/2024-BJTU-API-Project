@@ -4,12 +4,20 @@ import com.yxhxianyu.secure.auditable.api.pojo.StudentPojo;
 import com.yxhxianyu.secure.auditable.api.service.StudentService;
 import com.yxhxianyu.secure.auditable.api.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Objects;
+import java.util.Random;
+import java.util.concurrent.atomic.AtomicLong;
 
+import static java.lang.Math.max;
 import static java.lang.Math.min;
 
 /**
@@ -22,7 +30,11 @@ public class Controller {
     /* ----- ----- Service ----- ----- */
 
     @Autowired
-    StudentService studentService;
+    private StudentService studentService;
+
+    private static final Logger logger = LoggerFactory.getLogger(Controller.class);
+    private final AtomicLong requestCounter = new AtomicLong(0);
+    private final AtomicLong requestTimeSum = new AtomicLong(0);
 
     /* ----- ----- Student ----- ----- */
 
@@ -31,15 +43,16 @@ public class Controller {
      */
     @PostMapping("/students")
     public String createStudent(@RequestBody HashMap<String, Object> student) {
-        try {
-            return studentService.insertStudent(
-                    (String) student.get("name"),
-                    (Integer) student.get("gender"),
-                    (Integer) student.get("age")
-            );
-        } catch (Exception e) {
-            return Utils.getResponse(400, "Bad Request");
-        }
+        return Utils.getResponse(410, "This API is disabled");
+//        try {
+//            return studentService.insertStudent(
+//                    (String) student.get("name"),
+//                    (Integer) student.get("gender"),
+//                    (Integer) student.get("age")
+//            );
+//        } catch (Exception e) {
+//            return Utils.getResponse(400, "Bad Request");
+//        }
     }
 
     /**
@@ -63,13 +76,47 @@ public class Controller {
      */
     @GetMapping("/students")
     public String getAllStudents(@RequestParam(value = "limit", required = false) Integer limit) {
-        int limitValue = limit == null ? 1000 : min(limit, 1000);
+
+        long startTime = System.currentTimeMillis();
+
+        // solve
+        int limitValue = limit == null ? 1000 : max(1, min(limit, 1000));
         List<StudentPojo> students = studentService.getStudents(limitValue);
-        return Utils.getOkResponse(
+
+        String response = Utils.getOkResponse(
                 "Success",
                 new HashMap<String, Object>() {{
                     put("students", students);
                 }}
         );
+
+        long endTime = System.currentTimeMillis();
+        long duration = endTime - startTime;
+        logger.info("Request received at [{}] processed in {} ms", getDateTime(startTime), duration);
+        requestCounter.incrementAndGet();
+        requestTimeSum.addAndGet(duration);
+        return response;
+    }
+
+    /**
+     * Log QPS
+     */
+    private static final int qpsLogDuration = 5000;
+    @Scheduled(fixedRate = qpsLogDuration)
+    public void logQPS() {
+        long startTime = System.currentTimeMillis() - qpsLogDuration;
+        long requestCount = requestCounter.getAndSet(0);
+        long requestTime = requestTimeSum.getAndSet(0);
+        logger.info(
+                "[{}] QPS: {}; Average Duration: {} ms",
+                getDateTime(startTime),
+                requestCount / 10.0,
+                (requestCount == 0 ? 0 : requestTime / requestCount)
+        );
+    }
+
+    private String getDateTime(long posixTime) {
+        LocalDateTime dateTime = LocalDateTime.ofInstant(java.time.Instant.ofEpochSecond(posixTime / 1000), ZoneId.of("UTC+8"));
+        return dateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
     }
 }
