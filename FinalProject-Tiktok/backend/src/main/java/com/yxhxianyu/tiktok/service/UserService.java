@@ -8,7 +8,6 @@ import com.yxhxianyu.tiktok.utils.Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.DuplicateKeyException;
-import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

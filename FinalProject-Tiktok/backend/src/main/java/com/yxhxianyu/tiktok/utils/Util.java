@@ -1,6 +1,5 @@
 package com.yxhxianyu.tiktok.utils;
 
-import com.alibaba.fastjson2.JSONObject;
 import com.yxhxianyu.tiktok.pojo.UserPojo;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.http.ResponseEntity;

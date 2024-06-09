@@ -16,14 +16,29 @@
                     <el-button class="button" type="primary" size="medium" @click="getAllUsers" plain>查询所有用户</el-button>
                 </el-col>
                 <el-col class="col">
-                    <h4 class="title">博客面板</h4>
-                    <el-input class="input" v-model="blog.title" placeholder="标题"></el-input>
-                    <el-input class="input" v-model="blog.content" placeholder="内容" type="textarea" :autosize="{minRows: 6, maxRows: 6}"></el-input>
-                    <el-input class="input" v-model="blog.uuid" placeholder="UUID"></el-input>
-                    <el-button class="button" type="primary" size="medium" @click="createBlog" plain>提交博客</el-button>
-                    <el-button class="button" type="primary" size="medium" @click="getBlog" plain>根据UUID查询单个博客</el-button>
-                    <el-button class="button" type="primary" size="medium" @click="updateBlog" plain>根据UUID更新单个博客</el-button>
-                    <el-button class="button" type="primary" size="medium" @click="getAllBlogs" plain>查询所有博客</el-button>
+                    <h4 class="title">视频面板</h4>
+                    <el-upload
+                        class="upload"
+                        ref="upload"
+                        action="http://localhost:8080/api/v1/videos"
+                        :on-preview="handlePreview"
+                        :on-remove="handleRemove"
+                        :on-success="handleSuccess"
+                        :on-error="handleError"
+                        :before-upload="beforeUpload"
+                        :data="uploadData"
+                        :file-list="fileList"
+                        list-type="picture">
+                            <el-button slot="trigger" size="small" type="primary">Select Video</el-button>
+                            <el-input v-model="video.title" placeholder="Video Title" />
+                            <el-button size="small" type="success" @click="submitUpload">Upload</el-button>
+                    </el-upload>
+
+                    <el-input class="input" v-model="video.uuid" placeholder="UUID"></el-input>
+                    <el-button class="button" type="primary" size="medium" @click="createVideo" plain>提交视频</el-button>
+                    <el-button class="button" type="primary" size="medium" @click="getVideo" plain>根据UUID查询单个视频</el-button>
+                    <el-button class="button" type="primary" size="medium" @click="updateVideo" plain>根据UUID更新单个视频</el-button>
+                    <el-button class="button" type="primary" size="medium" @click="getAllVideos" plain>查询所有视频</el-button>
                 </el-col>
             </el-row>
             <el-input class="output" v-model="token" placeholder="Token" disabled></el-input>
@@ -43,13 +58,21 @@ export default {
                 telephone: "18123456789",
                 uuid: "",
             },
-            blog: {
-                title: "博客标题",
-                content: "博客内容\n第一行\n第二行",
+            video: {
+                title: "视频标题",
                 uuid: "",
             },
             output: "",
             token: "",
+            fileList: [],
+        }
+    },
+    computed: {
+        uploadData() {
+            return {
+                token: this.token,
+                title: this.video.title,
+            }
         }
     },
     methods: {
@@ -145,21 +168,48 @@ export default {
                 that.errorHandle(error)
             })
         },
-        // === Blog ===
-        createBlog() {
+        // === Upload Video ===
+        handlePreview(file) {
+            window.console.log("handlePreview: ", file)
+        },
+        handleRemove(file, fileList) {
+            window.console.log("handleRemove: ", file, fileList)
+        },
+        handleSuccess(response, file, fileList) {
+            window.console.log("handleSuccess: ", response, file, fileList)
+        },
+        handleError(error, file, fileList) {
+            window.console.log("handleError: ", error, file, fileList)
+        },
+        beforeUpload(file) {
+            const isVideo = file.type === 'video/mp4'
+            if (!isVideo) {
+                this.$message.error('上传视频只能是 MP4 格式!')
+            }
+            return isVideo
+        },
+        submitUpload() {
+            if (this.video.title == "") {
+                this.$message.error('请填写视频标题!')
+                return
+            }
+            this.$refs.upload.submit()
+        },
+        // === Video ===
+        createVideo() {
             const that = this
             that.output = new Date().toLocaleString() + "\n"
             
             this.$axios({
-                url: "http://localhost:8080/api/v1/blogs",
+                url: "http://localhost:8080/api/v1/videos",
                 method: 'post',
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': that.token,
                 },
                 data: JSON.stringify({
-                    title: that.blog.title,
-                    content: that.blog.content,
+                    title: that.video.title,
+                    content: that.video.content,
                 }),
             }) .then(function (response) {
                 that.output += JSON.stringify(response.data.data, null, 4)
@@ -167,24 +217,24 @@ export default {
                 that.errorHandle(error)
             })
         },
-        getBlog() {
+        getVideo() {
             const that = this
             that.output = new Date().toLocaleString() + "\n"
 
-            if (that.blog.uuid == "") {
+            if (that.video.uuid == "") {
                 that.output += "Error: UUID is empty"
                 return
             }
 
             this.$axios({
-                url: "http://localhost:8080/api/v1/blogs/" + that.blog.uuid,
+                url: "http://localhost:8080/api/v1/videos/" + that.video.uuid,
                 method: 'get',
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': that.token,
                 },
                 data: JSON.stringify({
-                    uuid: that.blog.uuid,
+                    uuid: that.video.uuid,
                 }),
             }) .then(function (response) {
                 that.output += JSON.stringify(response.data.data, null, 4)
@@ -192,12 +242,12 @@ export default {
                 that.errorHandle(error)
             })
         },
-        getAllBlogs() {
+        getAllVideos() {
             const that = this
             that.output = new Date().toLocaleString() + "\n"
             
             this.$axios({
-                url: "http://localhost:8080/api/v1/blogs",
+                url: "http://localhost:8080/api/v1/videos",
                 method: 'get',
                 headers: {
                     'Content-Type': 'application/json',
@@ -209,25 +259,25 @@ export default {
                 that.errorHandle(error)
             })
         },
-        updateBlog() {
+        updateVideo() {
             const that = this
             that.output = new Date().toLocaleString() + "\n"
 
-            if (that.blog.uuid == "") {
+            if (that.video.uuid == "") {
                 that.output += "Error: UUID is empty"
                 return
             }
 
             this.$axios({
-                url: "http://localhost:8080/api/v1/blogs/" + that.blog.uuid,
+                url: "http://localhost:8080/api/v1/videos/" + that.video.uuid,
                 method: 'patch',
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': that.token,
                 },
                 data: JSON.stringify({
-                    title: that.blog.title,
-                    content: that.blog.content,
+                    title: that.video.title,
+                    content: that.video.content,
                 }),
             }) .then(function (response) {
                 that.output += JSON.stringify(response.data.data, null, 4)
@@ -240,6 +290,12 @@ export default {
 </script>
 
 <style scoped>
+
+    .upload {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
     .main-container {
         width: 100%;

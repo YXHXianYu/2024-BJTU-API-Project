@@ -29,4 +29,5 @@
     * Every API's Input & Output
   * ~~Security —— @YXHXianYu~~
   * Bonus —— @Fooliqi
+    * 对视频内容取哈希值，在存视频时，若哈希值匹配，则不重新存视频，减小重复视频的开销
 * 答辩 —— @YXHXianYu

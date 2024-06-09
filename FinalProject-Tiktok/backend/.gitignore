@@ -1,3 +1,9 @@
+# Added by YXHXianYu
+
+video-upload-dir/*.mp4
+
+############################################
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar

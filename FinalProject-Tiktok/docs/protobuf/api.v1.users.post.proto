@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+// package com.yxhxianyu.tiktok.proto;
+option java_package = "com.yxhxianyu.tiktok.proto";
+
+message Req {
+    string username = 1;
+    string password = 2;
+    string email = 3;
+    string telephone = 4;
+}
+
+message Res {
+    uint32 status = 1;
+    string message = 2;
+}
