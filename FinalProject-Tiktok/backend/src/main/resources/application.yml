@@ -1,0 +1,7 @@
+
+spring:
+  datasource:
+    username: tiktok
+    password: tD8f!Pc15
+    url: jdbc:mysql://60.205.253.222:3306/tiktok
+    driver-class-name: com.mysql.cj.jdbc.Driver
