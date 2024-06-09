@@ -54,7 +54,7 @@ export default {
     },
     methods: {
         errorHandle(error) {
-            const that = this;
+            const that = this
             if (error.response) {
                 that.output += "Error: " + error.response.data.message
             } else if (error.request) {
@@ -79,7 +79,7 @@ export default {
                     telephone: that.user.telephone,
                 }),
             }) .then(function (response) {
-                that.output = JSON.stringify(response.data.data, null, 4)
+                that.output += JSON.stringify(response.data.data, null, 4)
             }) .catch(function (error) {
                 that.errorHandle(error)
             })

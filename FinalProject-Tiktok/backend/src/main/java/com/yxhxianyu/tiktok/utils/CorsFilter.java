@@ -20,7 +20,7 @@ public class CorsFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletResponse httpResponse = (HttpServletResponse) response;
-        httpResponse.setHeader("Access-Control-Allow-Origin", "http://localhost:10087"); // 允许的前端域名
+        httpResponse.setHeader("Access-Control-Allow-Origin", "http://localhost:5000"); // 允许的前端域名
         httpResponse.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE"); // 允许的请求方法
         httpResponse.setHeader("Access-Control-Allow-Headers", "Content-Type, X-Auth-Token, Origin, Authorization"); // 允许的请求头
         chain.doFilter(request, response);

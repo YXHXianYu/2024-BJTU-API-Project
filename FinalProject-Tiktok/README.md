@@ -8,8 +8,8 @@
   * 测试文档 —— @黎苏
 * Frontend —— @YXHXianYu
 * Backend
-  * Framework —— @YXHXianYu
-  * User Management —— @YXHXianYu
+  * ~~Framework —— @YXHXianYu~~
+  * ~~User Management —— @YXHXianYu~~
     * Login
     * Register
     * Logout
@@ -27,6 +27,6 @@
   * Log —— @lovekdl
     * Every API's Response Time
     * Every API's Input & Output
-  * Security —— @YXHXianYu
+  * ~~Security —— @YXHXianYu~~
   * Bonus —— @Fooliqi
 * 答辩 —— @YXHXianYu

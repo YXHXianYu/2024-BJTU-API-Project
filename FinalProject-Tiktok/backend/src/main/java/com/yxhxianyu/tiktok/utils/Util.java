@@ -1,7 +1,9 @@
 package com.yxhxianyu.tiktok.utils;
 
 import com.alibaba.fastjson2.JSONObject;
+import com.yxhxianyu.tiktok.pojo.UserPojo;
 import org.apache.commons.codec.digest.DigestUtils;
+import org.springframework.http.ResponseEntity;
 
 import java.util.Base64;
 import java.util.HashMap;
@@ -22,13 +24,13 @@ public class Util {
      * @param data 数据
      * @return 字符串形式的Response
      */
-    public static String getResponse(int code, String message, Object data) {
+    public static ResponseEntity<Object> getResponse(int code, String message, Object data) {
         Map<String, Object> map = new HashMap<>();
         map.put("code", code);
         map.put("message", message);
         if(data != null)
             map.put("data", data);
-        return JSONObject.toJSONString(map);
+        return ResponseEntity.status(code).body(map);
     }
 
     /**
@@ -37,7 +39,7 @@ public class Util {
      * @param message 信息内容
      * @return 字符串形式的Response
      */
-    public static String getResponse(int code, String message) {
+    public static ResponseEntity<Object> getResponse(int code, String message) {
         return getResponse(code, message, null);
     }
 
@@ -46,7 +48,7 @@ public class Util {
      * @param message 信息内容
      * @return 字符串形式的Response
      */
-    public static String getOkResponse(String message) {
+    public static ResponseEntity<Object> getOkResponse(String message) {
         return getResponse(200, message);
     }
 
@@ -56,7 +58,7 @@ public class Util {
      * @param data 数据
      * @return 字符串形式的Response
      */
-    public static String getOkResponse(String message, Object data) {
+    public static ResponseEntity<Object> getOkResponse(String message, Object data) {
         return getResponse(200, message, data);
     }
 
@@ -97,24 +99,8 @@ public class Util {
 
     /* ----- ----- 权限 ----- ----- */
 
-    /* 只有Login和Register不需要权限，其他API都需要权限 */
-    public static final int AUTHORITY_STUDENT = 0;
-    public static final int AUTHORITY_TEACHER = 1;
-    public static final int AUTHORITY_ADMINISTRATOR = 2;
-
-    public static final int NEEDED_AUTHORITY_REGISTER_TEACHER = 2;
-    public static final int NEEDED_AUTHORITY_REGISTER_ADMINISTRATOR = 2;
-
-    public static boolean haveAuthority(int authority, int neededAuthority) {
-        return authority >= neededAuthority;
-    }
-
-    public static Object checkAuthority(int authority, int neededAuthority) {
-        if(haveAuthority(authority, neededAuthority)) {
-            return new Ok();
-        } else {
-            return getResponse(403, "该用户没有权限");
-        }
+    public static boolean checkPermission(UserPojo user) {
+        return user.getUsername().equals("admin");
     }
 
 }

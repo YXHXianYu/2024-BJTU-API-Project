@@ -47,14 +47,24 @@ public class UserService {
      * 根据UUID查询一条用户信息
      */
     public Result<UserPojo> getUserByUUID(String uuid) {
-        return new Result<>(null, userDao.selectById(uuid));
+        UserPojo user = userDao.selectById(uuid);
+        if (user == null) {
+            return new Result<>("Not Found", null);
+        } else {
+            return new Result<>(null, user);
+        }
     }
 
     /**
      * 根据名字查询一条用户信息
      */
     public Result<UserPojo> getUserByName(String username) {
-        return new Result<>(null, userDao.selectOne(new QueryWrapper<UserPojo>().eq("username", username)));
+        UserPojo user = userDao.selectOne(new QueryWrapper<UserPojo>().eq("username", username));
+        if (user == null) {
+            return new Result<>("Not Found", null);
+        } else {
+            return new Result<>(null, user);
+        }
     }
 
     /**
@@ -73,14 +83,23 @@ public class UserService {
      */
     public Result<String> getUUIDByName(String name) {
         UserPojo pojo = userDao.selectOne(new QueryWrapper<UserPojo>().eq("username", name));
-        return pojo == null ? new Result<>("Not Found", null) : new Result<>(null, pojo.getUuid());
+        if (pojo == null) {
+            return new Result<>("Not Found", null);
+        } else {
+            return new Result<>(null, pojo.getUuid());
+        }
     }
 
     /**
      * 查询所有用户
      */
     public Result<List<UserPojo>> getAllUsers() {
-        return new Result<>(null, userDao.selectList(new QueryWrapper<>()));
+        List<UserPojo> users = userDao.selectList(new QueryWrapper<>());
+        if (users.isEmpty()) {
+            return new Result<>("Not Found", null);
+        } else {
+            return new Result<>(null, users);
+        }
     }
 
     /**

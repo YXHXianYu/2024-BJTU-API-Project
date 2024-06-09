@@ -13,7 +13,7 @@ Vue.prototype.$axios = axios;
 Vue.prototype.$md5 = md5;
 Vue.prototype.$server = "http://localhost";
 Vue.prototype.$localServer = "http://localhost";
-Vue.prototype.$url = Vue.prototype.$server +  ":5000";
+Vue.prototype.$url = Vue.prototype.$server +  ":8080";
 Vue.prototype.$salt = "QYXTQL%%%%%11231LDLJHHAHSACOASJCPJASODPP:LNKJDAS@123123qwe123dfaf513234";
 
 new Vue({
