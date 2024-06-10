@@ -13,7 +13,7 @@
     * Login
     * Register
     * Logout
-  * Video Management —— @YXHXianYu
+  * ~~Video Management —— @YXHXianYu~~
     * Create A Video
     * Query My Video (分页)
     * Delete My Video
@@ -22,7 +22,7 @@
     * Most Likes Video (Every video is only recommended once)
     * Last Video, Next Video
     * Like Button
-  * Database —— @YXHXianYu
+  * ~~Database —— @YXHXianYu~~
     * Save Video
   * Log —— @lovekdl
     * Every API's Response Time

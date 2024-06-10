@@ -1,6 +1,7 @@
 package com.yxhxianyu.tiktok.controller;
 
 import com.yxhxianyu.tiktok.pojo.UserPojo;
+import com.yxhxianyu.tiktok.pojo.VideoPojo;
 import com.yxhxianyu.tiktok.service.UserService;
 import com.yxhxianyu.tiktok.service.VideoService;
 import com.yxhxianyu.tiktok.utils.Result;
@@ -49,5 +50,56 @@ public class VideoController {
         }
         return Util.getOkResponse("创建成功");
     }
+
+
+    @RequestMapping(value = "/api/v1/videos", method = RequestMethod.GET)
+    public ResponseEntity<Object> getAllVideos(@RequestParam(defaultValue = "1") int page) {
+        Result<List<VideoPojo>> allVideos = videoService.getAllVideos(page, 2);
+        if (allVideos.err != null) {
+            return Util.getResponse(404, "视频不存在");
+        }
+        return Util.getOkResponse("获取成功", allVideos.val);
+    }
+
+    @RequestMapping(value = "/api/v1/videos/{uuid}", method = RequestMethod.GET)
+    public ResponseEntity<Object> getVideo(@PathVariable String uuid) {
+        Result<VideoPojo> video = videoService.getVideoByUUID(uuid);
+        if (video.err != null) {
+            return Util.getResponse(404, "视频不存在");
+        }
+
+        return Util.getOkResponse("获取成功", video.val);
+    }
+
+    @RequestMapping(value = "/api/v1/videos/{uuid}", method = RequestMethod.DELETE)
+    public ResponseEntity<Object> deleteVideo(@PathVariable String uuid, @RequestHeader String Authorization) {
+        Result<UserPojo> user = userService.getUserByToken(Authorization);
+        if (user.err != null) {
+            return Util.getResponse(401, "Unauthorized");
+        }
+
+        Result<VideoPojo> video = videoService.getVideoByUUID(uuid);
+        if (video.err != null) {
+            return Util.getResponse(404, "视频不存在");
+        }
+
+        if (!video.val.getUserUuid().equals(user.val.getUuid())) {
+            return Util.getResponse(403, "Forbidden");
+        }
+
+        videoService.deleteVideoByUUID(uuid);
+        return Util.getOkResponse("删除成功");
+    }
+
+    @RequestMapping(value = "/api/v1/playable_videos/{uuid}", method = RequestMethod.GET)
+    public ResponseEntity<Object> getPlayableVideo(@PathVariable String uuid) {
+        Result<VideoPojo> video = videoService.getVideoByUUID(uuid);
+        if (video.err != null) {
+            return Util.getResponse(404, "视频不存在");
+        }
+
+        return videoService.playVideo(video.val.getUuid());
+    }
+
 
 }

@@ -3,11 +3,20 @@ spring:
   datasource:
     username: tiktok
     password: tD8f!Pc15
-    url: jdbc:mysql://60.205.253.222:3306/tiktok
+#    url: jdbc:mysql://60.205.253.222:3306/tiktok
+    url: jdbc:mysql://localhost:3306/tiktok
     driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      idle-timeout: 300000
+      max-lifetime: 1800000  # 30 分钟
+      connection-timeout: 30000
+      validation-timeout: 5000
   servlet:
     multipart:
       location: ./video-tmp
+      max-file-size: 200MB
+      max-request-size: 200MB
 
 video:
   upload-dir: ./video-upload-dir

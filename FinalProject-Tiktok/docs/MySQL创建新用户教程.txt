@@ -1,0 +1,6 @@
+CREATE USER 'tiktok'@'%' IDENTIFIED BY 'tD8f!Pc15';
+GRANT ALL PRIVILEGES ON tiktok.* TO 'tiktok'@'%';
+FLUSH PRIVILEGES;
+
+执行脚本：
+SOURCE *your_path_to_sql_file*
