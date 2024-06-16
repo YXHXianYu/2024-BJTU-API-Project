@@ -1,0 +1,36 @@
+2024-06-16 23:24:53 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Starting TiktokApplication using Java 17.0.7 on YXH_XianYu with PID 24124 (E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend\target\classes started by YXHXianYu in E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend)
+2024-06-16 23:24:53 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-16 23:24:53 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-16 23:24:53 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-16 23:24:54 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-16 23:24:54 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:24:54 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-16 23:24:54 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-06-16 23:24:54 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-16 23:24:54 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 943 ms
+2024-06-16 23:24:55 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-16 23:24:55 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:24:55 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-16 23:24:55 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Started TiktokApplication in 1.975 seconds (JVM running for 2.436)
+2024-06-16 23:24:56 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-16 23:24:56 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-16 23:24:56 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-16 23:24:56 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "login" with arguments: "[{"username":"user","password":"***"}]"
+2024-06-16 23:24:56 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2024-06-16 23:24:56 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-16 23:24:56 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-16 23:24:56 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "login" with result: "{"headers":{},"body":{"code":200,"data":{"token":"dXNlcg=="},"message":"登陆成功，请使用data.token中的身份验证"},"statusCode":"OK","statusCodeValue":200}" in 327 ms
+2024-06-16 23:24:57 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:24:57 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:24:57 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 5 ms
+2024-06-16 23:24:57 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 6 ms
+2024-06-16 23:24:57 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:24:57 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:24:57 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:24:57 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:25:00 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:25:00 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:25:00 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:25:00 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:25:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-16 23:25:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

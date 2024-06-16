@@ -24,7 +24,7 @@
     * Like Button
   * ~~Database —— @YXHXianYu~~
     * Save Video
-  * Log —— @lovekdl
+  * ~~Log —— @lovekdl~~
     * Every API's Response Time
     * Every API's Input & Output
   * ~~Security —— @YXHXianYu~~

@@ -349,8 +349,6 @@ export default {
                 const uuid = that.getUuidFromVideoUrl()
                 that.video.uuid = uuid
                 that.videoLikes = that.getVideoLikes(uuid)
-                window.console.log("isVideoLiked: ", uuid in that.haveLikedVideos)
-                window.console.log(that.haveLikedVideos)
                 that.isVideoLiked = uuid in that.haveLikedVideos
             } else {
                 that.isVideoLiked = true
@@ -435,7 +433,6 @@ export default {
                 response
                 window.alert("点赞成功！")
                 that.haveLikedVideos[videoUuid] = true
-                window.console.log(that.haveLikedVideos)
                 that.videoLikes += 1
                 that.isVideoLiked = true
             }) .catch(function (error) {
@@ -462,7 +459,7 @@ export default {
             }) .catch(function (error) {
                 that.errorHandle(error)
             })
-        }
+        },
     }
 }
 </script>
