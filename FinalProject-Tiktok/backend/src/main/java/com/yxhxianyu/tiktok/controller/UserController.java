@@ -56,6 +56,7 @@ public class UserController {
     /**
      * 登录用户
      */
+    @CrossOrigin
     @RequestMapping(value = "/api/v1/sessions", method = RequestMethod.POST)
     public ResponseEntity<Object> login(@RequestBody LoginRequest req) {
         String encodedPassword = Util.passwordEncoder(req.password);

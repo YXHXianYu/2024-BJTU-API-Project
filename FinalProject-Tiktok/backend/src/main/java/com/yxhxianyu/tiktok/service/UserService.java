@@ -16,7 +16,6 @@ import java.util.UUID;
 /**
  * User表的服务
  * @author YXH_XianYu
- * @date 2023/10/7 23:28
  **/
 @Service
 public class UserService {

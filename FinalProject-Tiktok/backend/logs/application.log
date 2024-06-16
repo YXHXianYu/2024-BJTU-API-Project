@@ -34,3 +34,655 @@
 2024-06-16 23:25:00 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
 2024-06-16 23:25:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-06-16 23:25:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-16 23:29:52 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Starting TiktokApplication using Java 17.0.7 on YXH_XianYu with PID 8584 (E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend\target\classes started by YXHXianYu in E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend)
+2024-06-16 23:29:52 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-16 23:29:52 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-16 23:29:52 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-16 23:29:53 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-16 23:29:53 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:29:53 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-16 23:29:53 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-06-16 23:29:53 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-16 23:29:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 909 ms
+2024-06-16 23:29:54 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-16 23:29:54 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:29:54 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-16 23:29:54 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Started TiktokApplication in 1.848 seconds (JVM running for 2.455)
+2024-06-16 23:29:58 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-16 23:29:58 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-16 23:29:58 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-16 23:29:58 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:29:58 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:29:58 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2024-06-16 23:29:58 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-16 23:29:59 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-16 23:29:59 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 312 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 312 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":1,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":0,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:29:59 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:29:59 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:01 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:01 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":1,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 3 ms
+2024-06-16 23:30:01 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:01 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:01 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:01 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:01 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:01 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:01 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:01 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:01 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:01 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:01 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:01 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:01 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:01 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:01 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:01 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 4 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":6,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:02 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:02 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:03 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:03 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:03 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:03 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:03 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:03 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:03 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:03 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:03 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:03 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:03 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:03 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:03 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:03 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:03 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:03 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:03 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:03 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:03 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:03 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:03 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:03 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:03 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:03 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:04 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:04 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:04 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:04 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:04 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:04 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:04 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:04 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:05 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:05 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:05 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":1,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:05 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:05 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:05 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:05 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:05 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:05 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:05 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:05 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:05 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:05 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:05 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:09 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:09 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:09 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":0,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:09 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:09 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:09 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:09 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:09 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:09 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:09 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:09 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:09 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:09 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:09 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:09 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:09 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:10 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:10 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":1,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 3 ms
+2024-06-16 23:30:10 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:10 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:10 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:10 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:10 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:10 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:10 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:10 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:10 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:10 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:10 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:10 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:10 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:10 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:10 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:10 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:11 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:11 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":0,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:11 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:11 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:11 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:11 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:11 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:11 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:11 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:11 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:11 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:11 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:11 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:11 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 0 ms
+2024-06-16 23:30:11 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:11 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:11 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:11 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:11 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:11 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:11 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:11 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":1,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 0 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":6,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:13 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:13 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:26 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:26 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":1,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 0 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 0 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":0,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":1,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:27 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:27 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:28 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:28 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:29 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:29 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:29 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":6,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:29 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:29 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:29 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:29 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:29 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:29 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:29 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:29 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:29 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:29 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:29 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:29 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:29 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:29 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:29 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:29 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:29 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:29 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:29 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:29 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["56b32c0c-2677-4f54-b5a8-522626739d4a"]"
+2024-06-16 23:30:29 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:31 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:31 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:31 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:31 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:31 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:31 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:31 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:31 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 0 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["35fa1f2b-1e9d-4edf-ac92-e3070915336f"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":2,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["70f78bce-f1e5-4196-b928-ec7432bf0b0b"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":1,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["8b752452-ec34-4759-9213-336512098721"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":0,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:32 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:32 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-16 23:30:34 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "likeVideo" with arguments: "["4dccc34b-eb5e-4cab-8cf0-191192b18aea"]"
+2024-06-16 23:30:34 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "likeVideo" with result: "{"headers":{},"body":{"code":200,"message":"点赞成功"},"statusCode":"OK","statusCodeValue":200}" in 26 ms
+2024-06-16 23:30:36 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:36 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 11 ms
+2024-06-16 23:30:37 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:37 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:37 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:37 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:37 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:37 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:38 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:38 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:38 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:38 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:38 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:38 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:38 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:38 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 5 ms
+2024-06-16 23:30:39 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:39 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:39 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:39 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 3 ms
+2024-06-16 23:30:39 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:39 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:39 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:39 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:39 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:39 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:39 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:39 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:40 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:40 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:40 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:40 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 3 ms
+2024-06-16 23:30:40 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:40 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:40 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:40 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:40 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:40 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:40 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:40 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:41 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:41 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:41 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:41 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-16 23:30:41 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" with arguments: "[1]"
+2024-06-16 23:30:41 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"35fa1f2b-1e9d-4edf-ac92-e3070915336f","title":"COD挂","filepath":".\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4","likes":2,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"},{"uuid":"4dccc34b-eb5e-4cab-8cf0-191192b18aea","title":"传家宝！","filepath":".\\video-upload-dir\\4dccc34b-eb5e-4cab-8cf0-191192b18aea.mp4","likes":1,"userUuid":"edf1ec68-1e52-45db-9ace-99c4ab21ca5c"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-16 23:30:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-16 23:30:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-16 23:30:48 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Starting TiktokApplication using Java 17.0.7 on YXH_XianYu with PID 19908 (E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend\target\classes started by YXHXianYu in E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend)
+2024-06-16 23:30:48 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-16 23:30:48 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-16 23:30:48 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-16 23:30:49 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-16 23:30:49 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:30:49 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-16 23:30:49 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-06-16 23:30:49 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-16 23:30:49 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 894 ms
+2024-06-16 23:30:49 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-16 23:30:49 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:30:49 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-16 23:30:49 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Started TiktokApplication in 1.89 seconds (JVM running for 2.396)
+2024-06-16 23:38:18 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Starting TiktokApplication using Java 17.0.7 on YXH_XianYu with PID 32500 (E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend\target\classes started by YXHXianYu in E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend)
+2024-06-16 23:38:18 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-16 23:38:18 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-16 23:38:18 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-16 23:38:18 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-16 23:38:18 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:38:18 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-16 23:38:18 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-06-16 23:38:19 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-16 23:38:19 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 939 ms
+2024-06-16 23:38:19 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-16 23:38:19 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:38:19 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-16 23:38:19 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Started TiktokApplication in 1.92 seconds (JVM running for 2.424)
+2024-06-16 23:38:24 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-16 23:38:24 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-16 23:38:24 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-16 23:38:24 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "login" from IP: "0:0:0:0:0:0:0:1" with arguments: "[{"username":"user","password":"***"}]"
+2024-06-16 23:38:24 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2024-06-16 23:38:24 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-16 23:38:25 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-16 23:38:25 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "login" with result: "{"headers":{},"body":{"code":200,"data":{"token":"dXNlcg=="},"message":"登陆成功，请使用data.token中的身份验证"},"statusCode":"OK","statusCodeValue":200}" in 303 ms
+2024-06-16 23:47:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-16 23:47:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-16 23:47:49 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Starting TiktokApplication using Java 17.0.7 on YXH_XianYu with PID 360 (E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend\target\classes started by YXHXianYu in E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend)
+2024-06-16 23:47:49 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-16 23:47:49 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-16 23:47:49 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-16 23:47:50 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-16 23:47:50 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:47:50 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-16 23:47:50 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-06-16 23:47:50 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-16 23:47:50 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 825 ms
+2024-06-16 23:47:51 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-16 23:47:51 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:47:51 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-16 23:47:51 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Started TiktokApplication in 1.749 seconds (JVM running for 2.252)
+2024-06-16 23:50:12 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Starting TiktokApplication using Java 17.0.7 on YXH_XianYu with PID 14736 (E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend\target\classes started by YXHXianYu in E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend)
+2024-06-16 23:50:12 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-16 23:50:12 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-16 23:50:12 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-16 23:50:13 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-16 23:50:13 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:50:13 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-16 23:50:13 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-06-16 23:50:13 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-16 23:50:13 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 837 ms
+2024-06-16 23:50:13 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-16 23:50:13 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:50:13 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-16 23:50:13 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Started TiktokApplication in 1.754 seconds (JVM running for 2.217)
+2024-06-16 23:54:13 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Starting TiktokApplication using Java 17.0.7 on YXH_XianYu with PID 6680 (E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend\target\classes started by YXHXianYu in E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend)
+2024-06-16 23:54:13 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-16 23:54:13 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-16 23:54:13 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-16 23:54:14 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-16 23:54:14 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:54:14 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-16 23:54:14 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-06-16 23:54:14 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-16 23:54:14 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 952 ms
+2024-06-16 23:54:15 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-16 23:54:15 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-16 23:54:15 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-16 23:54:15 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Started TiktokApplication in 2.035 seconds (JVM running for 2.619)

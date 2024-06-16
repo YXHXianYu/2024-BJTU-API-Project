@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
  * Pojo类只储存信息，不做任何其他操作（如构造函数等）
  * 所有操作应该在DAO中完成
  * @author YXH_XianYu
- * @date 2023/10/7 22:28
  **/
 @Data
 @AllArgsConstructor
