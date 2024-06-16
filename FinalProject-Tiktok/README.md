@@ -18,7 +18,7 @@
     * Query My Video (分页)
     * Delete My Video
     * Need Authority Check
-  * Video Recommendation —— @Fooliqi
+  * ~~Video Recommendation —— @Fooliqi~~
     * Most Likes Video (Every video is only recommended once)
     * Last Video, Next Video
     * Like Button

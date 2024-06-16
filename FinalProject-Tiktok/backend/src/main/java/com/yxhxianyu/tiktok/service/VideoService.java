@@ -153,4 +153,17 @@ public class VideoService {
             return ResponseEntity.internalServerError().build();
         }
     }
+
+    public void likeVideo(String uuid) {
+        VideoPojo video = videoDao.selectById(uuid);
+        assert video != null;
+        video.setLikes(video.getLikes() + 1);
+        videoDao.updateById(video);
+    }
+
+    public Result<List<VideoPojo>> getRecommendations() {
+        // sort by likes, return all
+        List<VideoPojo> recommendations = videoDao.selectList(new QueryWrapper<VideoPojo>().orderByDesc("likes"));
+        return new Result<>(null, recommendations);
+    }
 }

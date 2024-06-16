@@ -6,6 +6,7 @@ import com.yxhxianyu.tiktok.service.UserService;
 import com.yxhxianyu.tiktok.service.VideoService;
 import com.yxhxianyu.tiktok.utils.Result;
 import com.yxhxianyu.tiktok.utils.Util;
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -101,5 +102,36 @@ public class VideoController {
         return videoService.playVideo(video.val.getUuid());
     }
 
+    // Recommendation System
+    @RequestMapping(value = "/api/v1/videos/{uuid}/likes", method = RequestMethod.POST)
+    public ResponseEntity<Object> likeVideo(@PathVariable String uuid) {
+        Result<VideoPojo> video = videoService.getVideoByUUID(uuid);
+        if (video.err != null) {
+            return Util.getResponse(404, "视频不存在");
+        }
+        videoService.likeVideo(uuid);
+        return Util.getOkResponse("点赞成功");
+    }
 
+    @RequestMapping(value = "/api/v1/videos/{uuid}/likes", method = RequestMethod.GET)
+    public ResponseEntity<Object> getLikes(@PathVariable String uuid) {
+        Result<VideoPojo> video = videoService.getVideoByUUID(uuid);
+        if (video.err != null) {
+            return Util.getResponse(404, "视频不存在");
+        }
+        return Util.getOkResponse("获取成功", video.val.getLikes());
+    }
+
+    @RequestMapping(value = "/api/v1/videos/recommendations", method = RequestMethod.GET)
+    public ResponseEntity<Object> getRecommendations(@RequestHeader String Authorization) {
+        Result<UserPojo> user = userService.getUserByToken(Authorization);
+        if (user.err != null) {
+            return Util.getResponse(401, "Unauthorized");
+        }
+        Result<List<VideoPojo>> recommendations = videoService.getRecommendations();
+        if (recommendations.err != null) {
+            return Util.getResponse(404, "视频不存在");
+        }
+        return Util.getOkResponse("获取成功", recommendations.val);
+    }
 }

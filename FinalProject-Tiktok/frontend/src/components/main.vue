@@ -1,7 +1,7 @@
 <template>
     <el-container class="main-container">
         <el-col class="content">
-            <h3 style="text-align: center">主菜单</h3>
+            <h3 style="text-align: center; margin: 10px">主菜单</h3>
             <el-row class="row">
                 <el-col class="col">
                     <h4 class="title">用户面板</h4>
@@ -23,33 +23,43 @@
                 </el-col>
                 <el-col class="col">
                     <h4 class="title">视频面板</h4>
-                    <el-input v-model="video.title" placeholder="Video Title" />
-                    <el-upload
-                        class="upload"
-                        ref="upload"
-                        action="http://localhost:8080/api/v1/videos"
-                        :on-preview="handlePreview"
-                        :on-remove="handleRemove"
-                        :on-success="handleSuccess"
-                        :on-error="handleError"
-                        :before-upload="beforeUpload"
-                        :data="uploadData"
-                        :file-list="fileList"
-                        :auto-upload=true
-                        :multiple=false
-                        list-type="text">
-                            <el-button class="button" type="primary" size="medium" slot="trigger" plain>上传视频</el-button>
-                    </el-upload>
-                    <!-- <el-button class="button" type="primary" size="medium" @click="submitUpload" plain>上传视频</el-button> -->
+                    <el-row>
+                        <el-input v-model="video.title" placeholder="Video Title" />
+                        <el-upload
+                            class="upload"
+                            ref="upload"
+                            action="http://localhost:8080/api/v1/videos"
+                            :on-preview="handlePreview"
+                            :on-remove="handleRemove"
+                            :on-success="handleSuccess"
+                            :on-error="handleError"
+                            :before-upload="beforeUpload"
+                            :data="uploadData"
+                            :file-list="fileList"
+                            :auto-upload=true
+                            :multiple=false
+                            list-type="text">
+                                <el-button class="button" type="primary" size="medium" slot="trigger" plain>上传视频</el-button>
+                        </el-upload>
+                        <!-- <el-button class="button" type="primary" size="medium" @click="submitUpload" plain>上传视频</el-button> -->
+                    </el-row>
                     
                     <el-row class="row">
                         <el-col class="subcol">
+                            <el-row class="subrow">
+                                <el-button class="button" type="primary" size="medium" @click="lastVideo" plain>上个视频</el-button>
+                                <el-button class="button" type="primary" size="medium" @click="nextVideo" plain>推荐视频!</el-button>
+                            </el-row>
                             <el-input class="input" v-model="video.uuid" placeholder="UUID"></el-input>
                             <el-button class="button" type="primary" size="medium" @click="getVideo" plain>根据UUID查询单个视频</el-button>
                             <el-button class="button" type="primary" size="medium" @click="deleteVideo" plain>根据UUID删除单个视频</el-button>
                             <el-button class="button" type="primary" size="medium" @click="getAllVideos" plain>查询所有视频</el-button>
                         </el-col>
                         <el-col class="subcol">
+                            <el-row class="subrow">
+                                <el-button :disabled="isVideoLiked" class="button" type="primary" size="medium" @click="likeVideo" plain>点赞视频!</el-button>
+                                <el-button class="button" type="primary" size="medium" @click="resetRecommendation" plain>重置推荐</el-button>
+                            </el-row>
                             <el-tooltip content="分页页码" placement="top">
                                 <el-input-number class="input" v-model="video_page" :min="1" placeholder="分页页码" />
                             </el-tooltip>
@@ -60,7 +70,9 @@
                 </el-col>
             </el-row>
             <el-input class="output" v-model="token" placeholder="Token" disabled></el-input>
-            <div v-if="videoUrl">
+            <div v-if="videoUrl" class="subrow">
+                <p>点赞数：</p>
+                <el-input style="width: auto" v-model="videoLikes" placeholder="0" disabled></el-input>
                 <video controls :src="videoUrl" width="600"></video>
             </div>
             <el-input class="output" v-model="output" placeholder="输出区域" type="textarea" :autosize="{minRows: 19, maxRows: 19}"></el-input>
@@ -88,6 +100,12 @@ export default {
             fileList: [],
             videoUrl: "",
             video_page: 1,
+            videoLikes: 0,
+            recommendationsList: [],
+            recommendationsCur: 0,
+
+            haveLikedVideos: {},
+            isVideoLiked: true,
         }
     },
     computed: {
@@ -311,6 +329,38 @@ export default {
                 that.errorHandle(error)
             })
         },
+        getUuidFromVideoUrl() {
+            const that = this
+            if (that.videoUrl === "") {
+                return null
+            } else {
+                const uuidPattern = /[a-zA-Z0-9-]+$/
+                const match = that.videoUrl.match(uuidPattern)
+                if (!match) {
+                    return null
+                }
+                return match[0]
+            }
+        },
+        updateIsVideoLiked() {
+            const that = this
+            window.console.log("!")
+            if (that.videoUrl !== "") {
+                const uuid = that.getUuidFromVideoUrl()
+                that.video.uuid = uuid
+                that.videoLikes = that.getVideoLikes(uuid)
+                window.console.log("isVideoLiked: ", uuid in that.haveLikedVideos)
+                window.console.log(that.haveLikedVideos)
+                that.isVideoLiked = uuid in that.haveLikedVideos
+            } else {
+                that.isVideoLiked = true
+            }
+        },
+        updateVideoUrl(url) {
+            const that = this
+            that.videoUrl = url
+            that.updateIsVideoLiked()
+        },
         playVideo() {
             const that = this
             that.output = new Date().toLocaleString() + "\n"
@@ -318,12 +368,101 @@ export default {
                 that.output += "Error: UUID is empty"
                 return
             }
-            that.videoUrl = "http://localhost:8080/api/v1/playable_videos/" + that.video.uuid
+            that.updateVideoUrl("http://localhost:8080/api/v1/playable_videos/" + that.video.uuid)
         },
         stopPlayingVideo() {
             const that = this
-            that.videoUrl = ""
+            that.updateVideoUrl("")
         },
+        // Recommendations
+        lastVideo() {
+            const that = this
+            if (that.recommendationsCur > 0) {
+                that.recommendationsCur -= 1;
+                that.updateVideoUrl("http://localhost:8080/api/v1/playable_videos/" + that.recommendationsList[that.recommendationsCur].uuid)
+            } else {
+                window.alert("没有上一个视频啦/(ㄒoㄒ)/~~")
+            }
+        },
+        nextVideo() {
+            const that = this
+            if (that.recommendationsList.length === 0) {
+                that.$axios({
+                    url: `http://localhost:8080/api/v1/videos/recommendations`,
+                    method: 'get',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': that.token,
+                    },
+                }) .then(function (response) {
+                    that.recommendationsList = response.data.data
+                    that.recommendationsCur = 0
+                    window.console.log(JSON.stringify(response.data.data, null, 4))
+                    that.updateVideoUrl("http://localhost:8080/api/v1/playable_videos/" + that.recommendationsList[that.recommendationsCur].uuid)
+                }) .catch(function (error) {
+                    that.errorHandle(error)
+                    that.recommendationsList = []
+                    that.recommendationsCur = 0
+                    that.updateVideoUrl("")
+                })
+            } else {
+                if (that.recommendationsCur < that.recommendationsList.length - 1) {
+                    that.recommendationsCur += 1
+                    that.updateVideoUrl("http://localhost:8080/api/v1/playable_videos/" + that.recommendationsList[that.recommendationsCur].uuid)
+                } else {
+                    window.alert("整个网站的视频已经看完啦～(∠・ω< )⌒★！")
+                }
+            }
+        },
+        likeVideo() {
+            const that = this
+            if (that.videoUrl === "") return
+            const uuidPattern = /[a-zA-Z0-9-]+$/
+            const match = that.videoUrl.match(uuidPattern)
+            if (!match) {
+                window.alert("警告！")
+            }
+            const videoUuid = match[0]
+
+            that.$axios({
+                url: `http://localhost:8080/api/v1/videos/${videoUuid}/likes`,
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': that.token,
+                },
+            }) .then(function (response) {
+                response
+                window.alert("点赞成功！")
+                that.haveLikedVideos[videoUuid] = true
+                window.console.log(that.haveLikedVideos)
+                that.videoLikes += 1
+                that.isVideoLiked = true
+            }) .catch(function (error) {
+                that.errorHandle(error)
+            })
+        },
+        resetRecommendation() {
+            const that = this
+            that.recommendationsList = []
+            that.recommendationsCur = 0
+            that.updateVideoUrl("")
+        },
+        getVideoLikes(videoUuid) {
+            const that = this
+            that.$axios({
+                url: `http://localhost:8080/api/v1/videos/${videoUuid}/likes`,
+                method: 'get',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': that.token,
+                },
+            }) .then(function (response) {
+                that.videoLikes = response.data.data
+            }) .catch(function (error) {
+                that.errorHandle(error)
+            })
+        }
     }
 }
 </script>
@@ -361,6 +500,18 @@ export default {
     .row {
         width: 100%;
         height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        /* flex-direction: row; */
+    }
+
+    .subrow {
+        width: 100%;
+
+        margin: 0;
 
         display: flex;
         justify-content: center;
@@ -411,6 +562,7 @@ export default {
 
     .title {
         text-align: center;
+        margin: 10px;
     }
     .button {
         margin: 2px;
