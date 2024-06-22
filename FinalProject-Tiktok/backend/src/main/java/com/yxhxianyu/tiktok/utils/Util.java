@@ -2,6 +2,7 @@ package com.yxhxianyu.tiktok.utils;
 
 import com.yxhxianyu.tiktok.pojo.UserPojo;
 import org.apache.commons.codec.digest.DigestUtils;
+import org.apache.el.parser.Token;
 import org.springframework.http.ResponseEntity;
 
 import java.util.Base64;
@@ -82,8 +83,8 @@ public class Util {
      * @return token
      */
     @SuppressWarnings("unused")
-    public static String tokenEncoder(String username, String password) {
-        return Base64.getEncoder().encodeToString(username.getBytes());
+    public static Result<String> tokenEncoder(String username, String password) {
+        return TokenUtils.tokenEncoder(username, password);
     }
 
     /**
@@ -91,8 +92,8 @@ public class Util {
      * @param token token
      * @return 用户名
      */
-    public static String tokenDecoder(String token) throws IllegalArgumentException {
-        return new String(Base64.getDecoder().decode(token));
+    public static Result<String> tokenDecoder(String token) throws IllegalArgumentException {
+        return TokenUtils.tokenDecoder(token);
     }
 
     /* ----- ----- 权限 ----- ----- */

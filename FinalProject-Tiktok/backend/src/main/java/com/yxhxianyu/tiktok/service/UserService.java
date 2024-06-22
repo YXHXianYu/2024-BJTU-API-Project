@@ -70,7 +70,11 @@ public class UserService {
      */
     public Result<UserPojo> getUserByToken(String token) {
         try {
-            return getUserByName(Util.tokenDecoder(token));
+            Result<String> username = Util.tokenDecoder(token);
+            if (username.err != null) {
+                return new Result<>(username.err, null);
+            }
+            return getUserByName(username.val);
         } catch (IllegalArgumentException e) {
             return new Result<>("IllegalArgument: token is invalid", null);
         }
