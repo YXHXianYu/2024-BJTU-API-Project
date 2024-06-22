@@ -92,6 +92,20 @@ public class VideoController {
         return Util.getOkResponse("删除成功");
     }
 
+    @RequestMapping(value = "/api/v1/my_videos", method = RequestMethod.GET)
+    public ResponseEntity<Object> getMyVedios(@RequestParam(defaultValue = "1") int page, @RequestHeader String Authorization) {
+        Result<UserPojo> user = userService.getUserByToken(Authorization);
+        if (user.err != null) {
+            return Util.getResponse(401, "Unauthorized");
+        }
+
+        Result<List<VideoPojo>> my_videos = videoService.getMyVideos(user.val.getUuid(), page, 2);
+        if (my_videos.err != null) {
+            return Util.getResponse(404, "我的视频获取失败");
+        }
+        return Util.getOkResponse("获取成功", my_videos.val);
+    }
+
     @RequestMapping(value = "/api/v1/playable_videos/{uuid}", method = RequestMethod.GET)
     public ResponseEntity<Object> getPlayableVideo(@PathVariable String uuid) {
         Result<VideoPojo> video = videoService.getVideoByUUID(uuid);
@@ -99,7 +113,7 @@ public class VideoController {
             return Util.getResponse(404, "视频不存在");
         }
 
-        return videoService.playVideo(video.val.getUuid());
+        return videoService.playVideo(video.val.getFilepath()); // hash
     }
 
     // Recommendation System

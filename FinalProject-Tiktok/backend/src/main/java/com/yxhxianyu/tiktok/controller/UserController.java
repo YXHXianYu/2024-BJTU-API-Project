@@ -62,18 +62,25 @@ public class UserController {
         String encodedPassword = Util.passwordEncoder(req.password);
 
         Result<UserPojo> user = userService.getUserByName(req.username);
-
         if(user.err != null) {
             System.out.println("登录：" + req.username + " 用户不存在");
             return Util.getResponse(404, "用户不存在");
-        } else if(!user.val.getPassword().equals(encodedPassword)) {
+        }
+
+        Result<String> passwd = userService.getUserPasswordByUUID(user.val.getUuid());
+
+        if(passwd.err != null) {
+            System.out.println("登录：" + req.username + " 鉴权服务器出错！");
+            return Util.getResponse(400, "鉴权服务器出错");
+        } else if(!passwd.val.equals(encodedPassword)) {
             System.out.println("登录：" + req.username + " 密码错误");
             return Util.getResponse(401, "密码错误");
         } else {
-            String token = Util.tokenEncoder(req.username, req.password);
+            Result<String> token = Util.tokenEncoder(req.username, req.password);
+            assert token.err == null;
             System.out.println("登录：" + req.username + " 登录成功");
             return Util.getOkResponse("登陆成功，请使用data.token中的身份验证", new HashMap<String, Object>() {{
-                put("token", token);
+                put("token", token.val);
             }});
         }
     }

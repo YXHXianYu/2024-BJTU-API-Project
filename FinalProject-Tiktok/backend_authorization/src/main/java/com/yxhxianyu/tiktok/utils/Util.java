@@ -1,15 +1,8 @@
 package com.yxhxianyu.tiktok.utils;
 
-import com.yxhxianyu.tiktok.pojo.UserPojo;
 import org.apache.commons.codec.digest.DigestUtils;
-import org.apache.el.parser.Token;
 import org.springframework.http.ResponseEntity;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.security.DigestInputStream;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
@@ -88,8 +81,8 @@ public class Util {
      * @return token
      */
     @SuppressWarnings("unused")
-    public static Result<String> tokenEncoder(String username, String password) {
-        return TokenUtils.tokenEncoder(username, password);
+    public static String tokenEncoder(String username, String password) {
+        return Base64.getEncoder().encodeToString(username.getBytes());
     }
 
     /**
@@ -97,32 +90,8 @@ public class Util {
      * @param token token
      * @return 用户名
      */
-    public static Result<String> tokenDecoder(String token) throws IllegalArgumentException {
-        return TokenUtils.tokenDecoder(token);
-    }
-
-    /* ----- ----- 权限 ----- ----- */
-
-    public static boolean checkPermission(UserPojo user) {
-        return user.getUsername().equals("admin");
-    }
-
-    /* ----- ----- 视频哈希 ----- ----- */
-
-    public static String calculateHash(InputStream inputStream, String algorithm) throws IOException, NoSuchAlgorithmException {
-        MessageDigest digest = MessageDigest.getInstance(algorithm);
-        try (DigestInputStream dis = new DigestInputStream(inputStream, digest)) {
-            byte[] buffer = new byte[4096];
-            while (dis.read(buffer) != -1) {
-                // Read file data
-            }
-        }
-        byte[] hashBytes = digest.digest();
-        StringBuilder sb = new StringBuilder();
-        for (byte b : hashBytes) {
-            sb.append(String.format("%02x", b));
-        }
-        return sb.toString();
+    public static String tokenDecoder(String token) throws IllegalArgumentException {
+        return new String(Base64.getDecoder().decode(token));
     }
 
 }

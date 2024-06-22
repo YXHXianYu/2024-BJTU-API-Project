@@ -54,6 +54,7 @@
                             <el-button class="button" type="primary" size="medium" @click="getVideo" plain>根据UUID查询单个视频</el-button>
                             <el-button class="button" type="primary" size="medium" @click="deleteVideo" plain>根据UUID删除单个视频</el-button>
                             <el-button class="button" type="primary" size="medium" @click="getAllVideos" plain>查询所有视频</el-button>
+                            
                         </el-col>
                         <el-col class="subcol">
                             <el-row class="subrow">
@@ -65,6 +66,7 @@
                             </el-tooltip>
                             <el-button class="button" type="primary" size="medium" @click="playVideo" plain>根据UUID播放单个视频</el-button>
                             <el-button class="button" type="primary" size="medium" @click="stopPlayingVideo" plain>关闭视频页</el-button>
+                            <el-button class="button" type="primary" size="medium" @click="getMyVideos" plain>查询我的视频</el-button>
                         </el-col>
                     </el-row>
                 </el-col>
@@ -138,12 +140,13 @@ export default {
                 headers: { 'Content-Type': 'application/json' },
                 data: JSON.stringify({
                     username: that.user.username,
-                    password: that.user.password,
+                    password: that.encode(that.user.password),
                     email: that.user.email,
                     telephone: that.user.telephone,
                 }),
             }) .then(function (response) {
-                that.output += JSON.stringify(response.data.data, null, 4)
+                response
+                that.output += "注册成功！"
             }) .catch(function (error) {
                 that.errorHandle(error)
             })
@@ -158,7 +161,7 @@ export default {
                 headers: { 'Content-Type': 'application/json' },
                 data: JSON.stringify({
                     username: that.user.username,
-                    password: that.user.password,
+                    password: that.encode(that.user.password),
                 }),
             }) .then(function (response) {
                 that.output += JSON.stringify(response.data.data, null, 4)
@@ -292,6 +295,23 @@ export default {
             
             this.$axios({
                 url: `http://localhost:8080/api/v1/videos?page=${that.video_page}`,
+                method: 'get',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': that.token,
+                },
+            }) .then(function (response) {
+                that.output += JSON.stringify(response.data.data, null, 4)
+            }) .catch(function (error) {
+                that.errorHandle(error)
+            })
+        },
+        getMyVideos() {
+            const that = this
+            that.output = new Date().toLocaleString() + "\n"
+            
+            this.$axios({
+                url: `http://localhost:8080/api/v1/my_videos?page=${that.video_page}`,
                 method: 'get',
                 headers: {
                     'Content-Type': 'application/json',
@@ -459,6 +479,16 @@ export default {
             }) .catch(function (error) {
                 that.errorHandle(error)
             })
+        },
+        encode(passwd) {
+            let new_passwd = passwd
+            for (let i = 0, j = 0; i < passwd.length; i++, j++) {
+                new_passwd += passwd.charCodeAt(i) + j
+            }
+            for (let i = 0, j = 0; i < passwd.length; i++, j++) {
+                new_passwd += passwd.charCodeAt(i) - j
+            }
+            return new_passwd.substring(0, passwd.length)
         },
     }
 }
