@@ -2362,3 +2362,959 @@ Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\T
 2024-06-23 02:07:35 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
 2024-06-23 02:08:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-06-23 02:08:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-23 02:08:30 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Starting TiktokApplication using Java 17.0.7 on YXH_XianYu with PID 35228 (E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend\target\classes started by YXHXianYu in E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend)
+2024-06-23 02:08:30 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-23 02:08:30 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23 02:08:30 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23 02:08:31 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-23 02:08:31 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-23 02:08:31 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-23 02:08:31 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-06-23 02:08:31 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-23 02:08:31 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 883 ms
+2024-06-23 02:08:32 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-23 02:08:32 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-23 02:08:32 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-23 02:08:32 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Started TiktokApplication in 1.784 seconds (JVM running for 2.251)
+2024-06-23 02:09:05 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23 02:09:05 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-23 02:09:05 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-23 02:09:05 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "login" from IP: "0:0:0:0:0:0:0:1" with arguments: "[{"username":"user","password":"***"}]"
+2024-06-23 02:09:05 [http-nio-8080-exec-2] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2024-06-23 02:09:05 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-23 02:09:05 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-23 02:09:05 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "login" with result: "{"headers":{},"body":{"code":200,"data":{"token":"dXNlcg=="},"message":"登陆成功，请使用data.token中的身份验证"},"statusCode":"OK","statusCodeValue":200}" in 246 ms
+2024-06-23 02:09:06 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" from IP: "0:0:0:0:0:0:0:1" with arguments: "[1]"
+2024-06-23 02:09:06 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 7 ms
+2024-06-23 02:09:14 [http-nio-8080-exec-6] WARN  org.apache.catalina.connector.Request - Creating the temporary upload location [C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\.\video-tmp] as it is required by the servlet [dispatcherServlet]
+2024-06-23 02:09:14 [http-nio-8080-exec-6] ERROR com.yxhxianyu.tiktok.logging.LoggingAspect - Failed to serialize arguments
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class java.io.FileDescriptor and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile[0]->org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile["inputStream"]->java.io.FileInputStream["fd"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1300)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:46)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:29)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serializeContents(ObjectArraySerializer.java:253)
+	at com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serialize(ObjectArraySerializer.java:214)
+	at com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serialize(ObjectArraySerializer.java:23)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4568)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3821)
+	at com.yxhxianyu.tiktok.logging.LoggingAspect.getArguments(LoggingAspect.java:57)
+	at com.yxhxianyu.tiktok.logging.LoggingAspect.logAround(LoggingAspect.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.yxhxianyu.tiktok.controller.VideoController$$EnhancerBySpringCGLIB$$9e6fc054.createVideo(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.yxhxianyu.tiktok.utils.CorsFilter.doFilter(CorsFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-06-23 02:09:14 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "createVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "[org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@40f045d7, COD, dXNlcg==]"
+2024-06-23 02:09:14 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "createVideo" with result: "{"headers":{},"body":{"code":200,"message":"创建成功"},"statusCode":"OK","statusCodeValue":200}" in 242 ms
+2024-06-23 02:09:14 [http-nio-8080-exec-6] WARN  o.s.w.m.support.StandardServletMultipartResolver - Failed to perform cleanup of multipart items
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000002.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.yxhxianyu.tiktok.utils.CorsFilter.doFilter(CorsFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000002.tmp
+	... 47 common frames omitted
+2024-06-23 02:09:14 [http-nio-8080-exec-6] ERROR org.apache.coyote.http11.Http11Processor - Error processing request
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000002.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:475)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000002.tmp
+	... 13 common frames omitted
+2024-06-23 02:09:14 [http-nio-8080-exec-6] ERROR org.apache.coyote.http11.Http11NioProtocol - Error reading request, ignored
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000002.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:475)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:420)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000002.tmp
+	... 13 common frames omitted
+2024-06-23 02:09:14 [http-nio-8080-exec-6] ERROR org.apache.tomcat.util.net.NioEndpoint - Error running socket processor
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000002.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:475)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.catalina.connector.CoyoteAdapter.checkRecycled(CoyoteAdapter.java:517)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1417)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1129)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1090)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000002.tmp
+	... 14 common frames omitted
+2024-06-23 02:09:24 [http-nio-8080-exec-8] ERROR com.yxhxianyu.tiktok.logging.LoggingAspect - Failed to serialize arguments
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class java.io.FileDescriptor and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile[0]->org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile["inputStream"]->java.io.FileInputStream["fd"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1300)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:46)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:29)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serializeContents(ObjectArraySerializer.java:253)
+	at com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serialize(ObjectArraySerializer.java:214)
+	at com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serialize(ObjectArraySerializer.java:23)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4568)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3821)
+	at com.yxhxianyu.tiktok.logging.LoggingAspect.getArguments(LoggingAspect.java:57)
+	at com.yxhxianyu.tiktok.logging.LoggingAspect.logAround(LoggingAspect.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.yxhxianyu.tiktok.controller.VideoController$$EnhancerBySpringCGLIB$$9e6fc054.createVideo(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.yxhxianyu.tiktok.utils.CorsFilter.doFilter(CorsFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-06-23 02:09:24 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "createVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "[org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2cc20930, COD-一个重复视频, dXNlcg==]"
+2024-06-23 02:09:24 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "createVideo" with result: "{"headers":{},"body":{"code":200,"message":"创建成功"},"statusCode":"OK","statusCodeValue":200}" in 199 ms
+2024-06-23 02:09:24 [http-nio-8080-exec-8] WARN  o.s.w.m.support.StandardServletMultipartResolver - Failed to perform cleanup of multipart items
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000005.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.yxhxianyu.tiktok.utils.CorsFilter.doFilter(CorsFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000005.tmp
+	... 47 common frames omitted
+2024-06-23 02:09:24 [http-nio-8080-exec-8] ERROR org.apache.coyote.http11.Http11Processor - Error processing request
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000005.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:475)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000005.tmp
+	... 13 common frames omitted
+2024-06-23 02:09:24 [http-nio-8080-exec-8] ERROR org.apache.coyote.http11.Http11NioProtocol - Error reading request, ignored
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000005.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:475)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:420)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000005.tmp
+	... 13 common frames omitted
+2024-06-23 02:09:24 [http-nio-8080-exec-8] ERROR org.apache.tomcat.util.net.NioEndpoint - Error running socket processor
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000005.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:475)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.catalina.connector.CoyoteAdapter.checkRecycled(CoyoteAdapter.java:517)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1417)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1129)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1090)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.15966540994746538285\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000005.tmp
+	... 14 common frames omitted
+2024-06-23 02:09:26 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" from IP: "0:0:0:0:0:0:0:1" with arguments: "[1]"
+2024-06-23 02:09:26 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"4ee742f6-d588-410b-98b5-7ccec1bb0f27","title":"COD","filepath":"39eb34e158fdc401f2bfbe8ec1e0752116140f517b064f62b5d2998203038a30","likes":0,"userUuid":"929c329e-eef4-4312-84d9-54193d52b3e2"},{"uuid":"ddef3df5-9f18-4243-ad0b-b55168d699e9","title":"COD-一个重复视频","filepath":"39eb34e158fdc401f2bfbe8ec1e0752116140f517b064f62b5d2998203038a30","likes":0,"userUuid":"929c329e-eef4-4312-84d9-54193d52b3e2"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-23 02:09:29 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getRecommendations" from IP: "0:0:0:0:0:0:0:1" with arguments: "["dXNlcg=="]"
+2024-06-23 02:09:29 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getRecommendations" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"4ee742f6-d588-410b-98b5-7ccec1bb0f27","title":"COD","filepath":"39eb34e158fdc401f2bfbe8ec1e0752116140f517b064f62b5d2998203038a30","likes":0,"userUuid":"929c329e-eef4-4312-84d9-54193d52b3e2"},{"uuid":"ddef3df5-9f18-4243-ad0b-b55168d699e9","title":"COD-一个重复视频","filepath":"39eb34e158fdc401f2bfbe8ec1e0752116140f517b064f62b5d2998203038a30","likes":0,"userUuid":"929c329e-eef4-4312-84d9-54193d52b3e2"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 6 ms
+2024-06-23 02:09:29 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:09:29 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":0,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 1 ms
+2024-06-23 02:09:29 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:09:29 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:29 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:09:29 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:29 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:09:29 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:29 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:09:29 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:09:29 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:09:29 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:29 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:09:29 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:09:29 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:09:29 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:09:29 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:09:29 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-23 02:09:29 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:09:29 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:29 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:09:29 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:09:31 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:09:31 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":0,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 3 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:09:39 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:39 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:09:40 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:09:40 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:10:48 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["ddef3df5-9f18-4243-ad0b-b55168d699e9"]"
+2024-06-23 02:10:48 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getVideo" with result: "{"headers":{},"body":{"code":200,"data":{"uuid":"ddef3df5-9f18-4243-ad0b-b55168d699e9","title":"COD-一个重复视频","filepath":"39eb34e158fdc401f2bfbe8ec1e0752116140f517b064f62b5d2998203038a30","likes":0,"userUuid":"929c329e-eef4-4312-84d9-54193d52b3e2"},"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 2 ms
+2024-06-23 02:11:20 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 82 class path changes (0 additions, 82 deletions, 0 modifications)
+2024-06-23 02:11:20 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-06-23 02:11:20 [Thread-5] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-23 02:11:20 [Thread-5] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-06-23 02:11:20 [Thread-5] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2024-06-23 02:11:20 [Thread-5] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Thread.sleep(Native Method)
+ app//com.zaxxer.hikari.util.UtilityElf.quietlySleep(UtilityElf.java:54)
+ app//com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:738)
+ app//com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+ java.base@17.0.7/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2024-06-23 02:11:20 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-23 02:11:20 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2024-06-23 02:11:20 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-23 02:11:24 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-23 02:11:24 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Starting TiktokApplication using Java 17.0.7 on YXH_XianYu with PID 35228 (E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend\target\classes started by YXHXianYu in E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend)
+2024-06-23 02:11:24 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-23 02:11:24 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-23 02:11:24 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-23 02:11:24 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-23 02:11:24 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-06-23 02:11:24 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-23 02:11:24 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 166 ms
+2024-06-23 02:11:24 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-23 02:11:24 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-23 02:11:24 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-23 02:11:24 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Started TiktokApplication in 0.402 seconds (JVM running for 174.577)
+2024-06-23 02:11:24 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-23 02:11:26 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 79 class path changes (79 additions, 0 deletions, 0 modifications)
+2024-06-23 02:11:26 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-06-23 02:11:26 [Thread-7] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-23 02:11:26 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-23 02:11:26 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2024-06-23 02:11:26 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Starting TiktokApplication using Java 17.0.7 on YXH_XianYu with PID 35228 (E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend\target\classes started by YXHXianYu in E:\Data\BJTU\BJTU6\10.API\2024-BJTU-API-Project\FinalProject-Tiktok\backend)
+2024-06-23 02:11:26 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-23 02:11:26 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-23 02:11:26 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-23 02:11:26 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-23 02:11:26 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2024-06-23 02:11:26 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-23 02:11:26 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 143 ms
+2024-06-23 02:11:26 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-23 02:11:26 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-23 02:11:26 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-23 02:11:26 [restartedMain] INFO  com.yxhxianyu.tiktok.TiktokApplication - Started TiktokApplication in 0.343 seconds (JVM running for 176.4)
+2024-06-23 02:11:26 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-23 02:13:47 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23 02:13:47 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-23 02:13:47 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-23 02:13:47 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getLikes" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:13:47 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:13:47 [http-nio-8080-exec-3] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-2 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2024-06-23 02:13:47 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-06-23 02:13:47 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-06-23 02:13:47 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getLikes" with result: "{"headers":{},"body":{"code":200,"data":0,"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 17 ms
+2024-06-23 02:13:47 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 17 ms
+2024-06-23 02:13:47 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:13:47 [http-nio-8080-exec-6] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:13:47 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:13:47 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 3 ms
+2024-06-23 02:13:47 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:13:47 [http-nio-8080-exec-7] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:13:47 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:13:47 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:13:47 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:13:47 [http-nio-8080-exec-8] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:13:47 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:13:47 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:13:47 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:13:47 [http-nio-8080-exec-10] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:13:47 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:13:47 [http-nio-8080-exec-1] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:13:47 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:13:47 [http-nio-8080-exec-4] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 1 ms
+2024-06-23 02:13:47 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getPlayableVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "["4ee742f6-d588-410b-98b5-7ccec1bb0f27"]"
+2024-06-23 02:13:47 [http-nio-8080-exec-3] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getPlayableVideo" with result: "[Cannot serialize result]" in 2 ms
+2024-06-23 02:13:56 [http-nio-8080-exec-5] WARN  org.apache.catalina.connector.Request - Creating the temporary upload location [C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\.\video-tmp] as it is required by the servlet [dispatcherServlet]
+2024-06-23 02:13:58 [http-nio-8080-exec-5] ERROR com.yxhxianyu.tiktok.logging.LoggingAspect - Failed to serialize arguments
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class java.io.FileDescriptor and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile[0]->org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile["inputStream"]->java.io.FileInputStream["fd"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1300)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:46)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:29)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serializeContents(ObjectArraySerializer.java:253)
+	at com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serialize(ObjectArraySerializer.java:214)
+	at com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serialize(ObjectArraySerializer.java:23)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4568)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3821)
+	at com.yxhxianyu.tiktok.logging.LoggingAspect.getArguments(LoggingAspect.java:57)
+	at com.yxhxianyu.tiktok.logging.LoggingAspect.logAround(LoggingAspect.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.yxhxianyu.tiktok.controller.VideoController$$EnhancerBySpringCGLIB$$9e6fc054.createVideo(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.yxhxianyu.tiktok.utils.CorsFilter.doFilter(CorsFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-06-23 02:13:58 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "createVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "[org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@5a7ff0d2, Apex英雄, dXNlcg==]"
+2024-06-23 02:13:59 [http-nio-8080-exec-5] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "createVideo" with result: "{"headers":{},"body":{"code":200,"message":"创建成功"},"statusCode":"OK","statusCodeValue":200}" in 1781 ms
+2024-06-23 02:13:59 [http-nio-8080-exec-5] WARN  o.s.w.m.support.StandardServletMultipartResolver - Failed to perform cleanup of multipart items
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000008.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.yxhxianyu.tiktok.utils.CorsFilter.doFilter(CorsFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000008.tmp
+	... 47 common frames omitted
+2024-06-23 02:13:59 [http-nio-8080-exec-5] ERROR org.apache.coyote.http11.Http11Processor - Error processing request
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000008.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:475)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000008.tmp
+	... 13 common frames omitted
+2024-06-23 02:13:59 [http-nio-8080-exec-5] ERROR org.apache.coyote.http11.Http11NioProtocol - Error reading request, ignored
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000008.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:475)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:420)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000008.tmp
+	... 13 common frames omitted
+2024-06-23 02:13:59 [http-nio-8080-exec-5] ERROR org.apache.tomcat.util.net.NioEndpoint - Error running socket processor
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000008.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:475)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.catalina.connector.CoyoteAdapter.checkRecycled(CoyoteAdapter.java:517)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1417)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1129)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1090)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000008.tmp
+	... 14 common frames omitted
+2024-06-23 02:14:07 [http-nio-8080-exec-2] ERROR com.yxhxianyu.tiktok.logging.LoggingAspect - Failed to serialize arguments
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class java.io.FileDescriptor and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile[0]->org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile["inputStream"]->java.io.FileInputStream["fd"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1300)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:46)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:29)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serializeContents(ObjectArraySerializer.java:253)
+	at com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serialize(ObjectArraySerializer.java:214)
+	at com.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serialize(ObjectArraySerializer.java:23)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4568)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3821)
+	at com.yxhxianyu.tiktok.logging.LoggingAspect.getArguments(LoggingAspect.java:57)
+	at com.yxhxianyu.tiktok.logging.LoggingAspect.logAround(LoggingAspect.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.yxhxianyu.tiktok.controller.VideoController$$EnhancerBySpringCGLIB$$9e6fc054.createVideo(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.yxhxianyu.tiktok.utils.CorsFilter.doFilter(CorsFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-06-23 02:14:07 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "createVideo" from IP: "0:0:0:0:0:0:0:1" with arguments: "[org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@6eb20231, 后室, dXNlcg==]"
+2024-06-23 02:14:07 [http-nio-8080-exec-2] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "createVideo" with result: "{"headers":{},"body":{"code":200,"message":"创建成功"},"statusCode":"OK","statusCodeValue":200}" in 277 ms
+2024-06-23 02:14:07 [http-nio-8080-exec-2] WARN  o.s.w.m.support.StandardServletMultipartResolver - Failed to perform cleanup of multipart items
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000011.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.yxhxianyu.tiktok.utils.CorsFilter.doFilter(CorsFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000011.tmp
+	... 47 common frames omitted
+2024-06-23 02:14:07 [http-nio-8080-exec-2] ERROR org.apache.coyote.http11.Http11Processor - Error processing request
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000011.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:475)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000011.tmp
+	... 13 common frames omitted
+2024-06-23 02:14:07 [http-nio-8080-exec-2] ERROR org.apache.coyote.http11.Http11NioProtocol - Error reading request, ignored
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000011.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:475)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:420)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000011.tmp
+	... 13 common frames omitted
+2024-06-23 02:14:07 [http-nio-8080-exec-2] ERROR org.apache.tomcat.util.net.NioEndpoint - Error running socket processor
+java.io.UncheckedIOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000011.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:475)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.catalina.connector.CoyoteAdapter.checkRecycled(CoyoteAdapter.java:517)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1417)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1129)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1090)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\YXHXianYu\AppData\Local\Temp\tomcat.8080.3612622802116061143\work\Tomcat\localhost\ROOT\video-tmp\upload_14d71657_ede8_4617_ad25_4c42fb30ab8b_00000011.tmp
+	... 14 common frames omitted
+2024-06-23 02:14:35 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Entering method: "getAllVideos" from IP: "0:0:0:0:0:0:0:1" with arguments: "[1]"
+2024-06-23 02:14:35 [http-nio-8080-exec-9] INFO  com.yxhxianyu.tiktok.logging.LoggingAspect - Exiting method: "getAllVideos" with result: "{"headers":{},"body":{"code":200,"data":[{"uuid":"1cc883b4-44d8-42d7-bf68-03707ed0c151","title":"Apex英雄","filepath":"aed002232df21407772d058d6d2b614f6607163408027470f52eedff53663d77","likes":0,"userUuid":"929c329e-eef4-4312-84d9-54193d52b3e2"},{"uuid":"4ee742f6-d588-410b-98b5-7ccec1bb0f27","title":"COD","filepath":"39eb34e158fdc401f2bfbe8ec1e0752116140f517b064f62b5d2998203038a30","likes":0,"userUuid":"929c329e-eef4-4312-84d9-54193d52b3e2"}],"message":"获取成功"},"statusCode":"OK","statusCodeValue":200}" in 3 ms
