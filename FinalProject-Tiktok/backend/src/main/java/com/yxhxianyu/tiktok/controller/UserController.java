@@ -76,10 +76,11 @@ public class UserController {
             System.out.println("登录：" + req.username + " 密码错误");
             return Util.getResponse(401, "密码错误");
         } else {
-            String token = Util.tokenEncoder(req.username, req.password);
+            Result<String> token = Util.tokenEncoder(req.username, req.password);
+            assert token.err == null;
             System.out.println("登录：" + req.username + " 登录成功");
             return Util.getOkResponse("登陆成功，请使用data.token中的身份验证", new HashMap<String, Object>() {{
-                put("token", token);
+                put("token", token.val);
             }});
         }
     }

@@ -88,6 +88,20 @@ public class VideoService {
             return new Result<>(null, videoList);
         }
     }
+    public Result<List<VideoPojo>> getMyVideos(String userUuid, int page, int size) {
+        page = Math.max(1, page);
+
+        QueryWrapper<VideoPojo> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("userUuid", userUuid).last("limit " + (page - 1) * size + ", " + size);
+
+        List<VideoPojo> videoList = videoDao.selectList(queryWrapper);
+
+        if (videoList == null) {
+            return new Result<>("Not Found", null);
+        } else {
+            return new Result<>(null, videoList);
+        }
+    }
 
     public Result<List<VideoPojo>> getAllVideos(int page, int size) {
         page = Math.max(1, page);
