@@ -2,7 +2,9 @@ package com.yxhxianyu.tiktok.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.yxhxianyu.tiktok.dao.UserDao;
+import com.yxhxianyu.tiktok.pojo.AuthorizationPOJO;
 import com.yxhxianyu.tiktok.pojo.UserPojo;
+import com.yxhxianyu.tiktok.service.impl.AuthorizationServiceImpl;
 import com.yxhxianyu.tiktok.utils.Result;
 import com.yxhxianyu.tiktok.utils.Util;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +25,9 @@ public class UserService {
     @Autowired
     UserDao userDao;
 
+    @Autowired
+    AuthorizationServiceImpl authorizationService;
+
     /**
      * 插入一条新的用户
      * 并返回该用户的UUID
@@ -30,7 +35,13 @@ public class UserService {
     public Result<String> createUser(String username, String password, String email, String telephone) {
         String uuid = UUID.randomUUID().toString();
         try {
-            userDao.insert(new UserPojo(uuid, username, password, email, telephone));
+            userDao.insert(new UserPojo(uuid, username, "***", email, telephone));
+
+            AuthorizationPOJO autho = new AuthorizationPOJO();
+            autho.setUuid(uuid);
+            autho.setPassword(password);
+            authorizationService.save(autho);
+
             return new Result<>(null, uuid);
         } catch (DuplicateKeyException e) {
             System.out.println("Insert failed: duplicate username");
@@ -38,6 +49,18 @@ public class UserService {
         } catch (DataIntegrityViolationException e) {
             System.out.println("Insert failed: data integrity violation (maybe data is too long)");
             return new Result<>("ERROR: 数据不合法 (可能因为数据过长)", null);
+        } catch (Exception e) {
+            System.out.println("鉴权服务器出错！");
+            return new Result<>("ERROR: 鉴权服务器出错！", null);
+        }
+    }
+
+    public Result<String> getUserPasswordByUUID(String uuid) {
+        try {
+            return new Result<>(null, authorizationService.getPasswordByName(uuid).getPassword());
+        } catch (Exception e) {
+            System.out.println("鉴权服务器出错！");
+            return new Result<>("ERROR: 鉴权服务器出错！", null);
         }
     }
 

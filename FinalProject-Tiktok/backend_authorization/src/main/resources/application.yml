@@ -12,16 +12,9 @@ spring:
       max-lifetime: 1800000  # 30 分钟
       connection-timeout: 30000
       validation-timeout: 5000
-  servlet:
-    multipart:
-      location: ./video-tmp
-      max-file-size: 200MB
-      max-request-size: 200MB
-
-video:
-  upload-dir: ./video-upload-dir
 
 server:
   thrift:
-    host: 127.0.0.1
     port: 8800
+    min-thread-pool: 100
+    max-thread-pool: 100

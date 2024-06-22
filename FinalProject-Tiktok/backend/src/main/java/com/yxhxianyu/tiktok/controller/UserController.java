@@ -62,11 +62,17 @@ public class UserController {
         String encodedPassword = Util.passwordEncoder(req.password);
 
         Result<UserPojo> user = userService.getUserByName(req.username);
-
         if(user.err != null) {
             System.out.println("登录：" + req.username + " 用户不存在");
             return Util.getResponse(404, "用户不存在");
-        } else if(!user.val.getPassword().equals(encodedPassword)) {
+        }
+
+        Result<String> passwd = userService.getUserPasswordByUUID(user.val.getUuid());
+
+        if(passwd.err != null) {
+            System.out.println("登录：" + req.username + " 鉴权服务器出错！");
+            return Util.getResponse(400, "鉴权服务器出错");
+        } else if(!passwd.val.equals(encodedPassword)) {
             System.out.println("登录：" + req.username + " 密码错误");
             return Util.getResponse(401, "密码错误");
         } else {

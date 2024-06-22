@@ -1,9 +1,7 @@
 package com.yxhxianyu.tiktok.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.yxhxianyu.tiktok.dao.UserDao;
 import com.yxhxianyu.tiktok.dao.VideoDao;
-import com.yxhxianyu.tiktok.pojo.UserPojo;
 import com.yxhxianyu.tiktok.pojo.VideoPojo;
 import com.yxhxianyu.tiktok.utils.Result;
 import com.yxhxianyu.tiktok.utils.Util;
@@ -23,6 +21,7 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.UUID;
 
@@ -39,12 +38,12 @@ public class VideoService {
 
         try {
             String uuid = UUID.randomUUID().toString();
-            String filepath = saveVideo(file, uuid);
-            videoDao.insert(new VideoPojo(uuid, title, filepath, 0, userUuid));
+            String hash = saveVideo(file, uuid);
+            videoDao.insert(new VideoPojo(uuid, title, hash, 0, userUuid));
             return new Result<>(null, uuid);
         } catch (DuplicateKeyException e) {
-            System.out.println("Insert failed: duplicate username");
-            return new Result<>("ERROR: Insert failed: duplicate username", null);
+            System.out.println("Insert failed: duplicate video title");
+            return new Result<>("ERROR: Insert failed: duplicate video title", null);
         } catch (DataIntegrityViolationException e) {
             System.out.println("Insert failed: data integrity violation (maybe data is too long)");
             return new Result<>("ERROR: Insert failed, data integrity violation", null);
@@ -114,12 +113,28 @@ public class VideoService {
     private String uploadDir;
 
     public String saveVideo(MultipartFile file, String uuid) throws IOException {
-        String fileName = uuid + ".mp4";
+        // 计算文件哈希值
+        String hash;
+        try (InputStream inputStream = file.getInputStream()) {
+            hash = Util.calculateHash(inputStream, "SHA-256");
+            System.out.println("Hash of video <" + file.getOriginalFilename() + "> is: " + hash);
+        } catch (NoSuchAlgorithmException | IOException e) {
+            e.printStackTrace();
+            throw new IOException("Hash calculation failed");
+        }
+
+        String fileName = hash + ".mp4";
         Path path = Paths.get(uploadDir, fileName);
 
         // 检查并创建目录
         if (!Files.exists(path.getParent())) {
             Files.createDirectories(path.getParent());
+        }
+
+        // 检查文件是否已经存在
+        if (Files.exists(path)) {
+            System.out.println("File <" + fileName + "> already exists");
+            return hash;
         }
 
         // 使用 try-with-resources 关闭 InputStream
@@ -133,12 +148,12 @@ public class VideoService {
             throw e; // 或者抛出自定义异常
         }
 
-        return path.toString();
+        return hash;
     }
 
-    public ResponseEntity<Object> playVideo(String uuid) {
+    public ResponseEntity<Object> playVideo(String hash) {
         try {
-            Path filePath = Paths.get(uploadDir).resolve(uuid + ".mp4").normalize();
+            Path filePath = Paths.get(uploadDir).resolve(hash + ".mp4").normalize();
             Resource resource = new UrlResource(filePath.toUri());
 
             if (resource.exists()) {

@@ -99,7 +99,7 @@ public class VideoController {
             return Util.getResponse(404, "视频不存在");
         }
 
-        return videoService.playVideo(video.val.getUuid());
+        return videoService.playVideo(video.val.getFilepath()); // hash
     }
 
     // Recommendation System
