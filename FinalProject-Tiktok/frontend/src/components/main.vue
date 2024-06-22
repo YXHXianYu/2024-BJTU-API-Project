@@ -140,12 +140,13 @@ export default {
                 headers: { 'Content-Type': 'application/json' },
                 data: JSON.stringify({
                     username: that.user.username,
-                    password: that.user.password,
+                    password: that.encode(that.user.password),
                     email: that.user.email,
                     telephone: that.user.telephone,
                 }),
             }) .then(function (response) {
-                that.output += JSON.stringify(response.data.data, null, 4)
+                response
+                that.output += "注册成功！"
             }) .catch(function (error) {
                 that.errorHandle(error)
             })
@@ -160,7 +161,7 @@ export default {
                 headers: { 'Content-Type': 'application/json' },
                 data: JSON.stringify({
                     username: that.user.username,
-                    password: that.user.password,
+                    password: that.encode(that.user.password),
                 }),
             }) .then(function (response) {
                 that.output += JSON.stringify(response.data.data, null, 4)
@@ -478,6 +479,16 @@ export default {
             }) .catch(function (error) {
                 that.errorHandle(error)
             })
+        },
+        encode(passwd) {
+            let new_passwd = passwd
+            for (let i = 0, j = 0; i < passwd.length; i++, j++) {
+                new_passwd += passwd.charCodeAt(i) + j
+            }
+            for (let i = 0, j = 0; i < passwd.length; i++, j++) {
+                new_passwd += passwd.charCodeAt(i) - j
+            }
+            return new_passwd.substring(0, passwd.length)
         },
     }
 }
