@@ -115,12 +115,10 @@ public class VideoService {
 
     public void deleteVideoByUUID(String uuid) {
         videoDao.deleteById(uuid);
-        // TODO: delete file
     }
 
     public void deleteVideoByTitle(String title) {
         videoDao.delete(new QueryWrapper<VideoPojo>().eq("title", title));
-        // TODO: delete file
     }
 
     @Value("${video.upload-dir}")

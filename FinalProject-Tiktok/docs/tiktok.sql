@@ -1,21 +1,40 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : Aliyun
+ Source Server         : MySQL
  Source Server Type    : MySQL
- Source Server Version : 80036 (8.0.36-0ubuntu0.22.04.1)
- Source Host           : 60.205.253.222:3306
+ Source Server Version : 80032 (8.0.32)
+ Source Host           : localhost:3306
  Source Schema         : tiktok
 
  Target Server Type    : MySQL
- Target Server Version : 80036 (8.0.36-0ubuntu0.22.04.1)
+ Target Server Version : 80032 (8.0.32)
  File Encoding         : 65001
 
- Date: 10/06/2024 16:40:48
+ Date: 23/06/2024 20:58:16
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for autho
+-- ----------------------------
+DROP TABLE IF EXISTS `autho`;
+CREATE TABLE `autho`  (
+  `uuid` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  PRIMARY KEY (`uuid`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of autho
+-- ----------------------------
+INSERT INTO `autho` VALUES ('19d78067-bd0b-4b41-8740-ae394db9489f', '663e33644c3166a0a75b25169034aefb');
+INSERT INTO `autho` VALUES ('45e4da4f-18e0-4ea3-8be4-3a073214eaa6', '250908eebc14df5c2f93da590bccc668');
+INSERT INTO `autho` VALUES ('50809122-581d-49cb-8187-164dc1be8356', '663e33644c3166a0a75b25169034aefb');
+INSERT INTO `autho` VALUES ('929c329e-eef4-4312-84d9-54193d52b3e2', '663e33644c3166a0a75b25169034aefb');
+INSERT INTO `autho` VALUES ('9c015f59-4ab1-49cd-a69d-6e070ca798c4', '663e33644c3166a0a75b25169034aefb');
 
 -- ----------------------------
 -- Table structure for user
@@ -29,14 +48,16 @@ CREATE TABLE `user`  (
   `telephone` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   PRIMARY KEY (`uuid`) USING BTREE,
   UNIQUE INDEX `username`(`username` ASC) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('44636283-00cd-4693-9090-c4b69caa11b9', 'admin', '663e33644c3166a0a75b25169034aefb', 'example@email.com', '10123456789');
-INSERT INTO `user` VALUES ('b8ebd099-a26c-4291-b090-d849c2cdc9d6', 'user1', '663e33644c3166a0a75b25169034aefb', 'example@email.com', '10123456789');
-INSERT INTO `user` VALUES ('edf1ec68-1e52-45db-9ace-99c4ab21ca5c', 'user', '663e33644c3166a0a75b25169034aefb', 'example@email.com', '10123456789');
+INSERT INTO `user` VALUES ('19d78067-bd0b-4b41-8740-ae394db9489f', 'user1', '***', '2943003@qq.com', '18123456789');
+INSERT INTO `user` VALUES ('45e4da4f-18e0-4ea3-8be4-3a073214eaa6', 'user_different_passwd', '***', 'different@gmail.com', '11451419198');
+INSERT INTO `user` VALUES ('50809122-581d-49cb-8187-164dc1be8356', 'user2', '***', '2943003@qq.com', '18123456789');
+INSERT INTO `user` VALUES ('929c329e-eef4-4312-84d9-54193d52b3e2', 'user', '***', '2943003@qq.com', '18123456789');
+INSERT INTO `user` VALUES ('9c015f59-4ab1-49cd-a69d-6e070ca798c4', 'admin', '***', '2943003@qq.com', '18123456789');
 
 -- ----------------------------
 -- Table structure for video
@@ -48,15 +69,10 @@ CREATE TABLE `video`  (
   `filepath` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `likes` int NOT NULL DEFAULT 0,
   `userUuid` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `hash` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
   PRIMARY KEY (`uuid`) USING BTREE,
-  UNIQUE INDEX `title`(`title` ASC) USING BTREE,
-  UNIQUE INDEX `filepath`(`filepath` ASC) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+  UNIQUE INDEX `title`(`title` ASC) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = DYNAMIC;
 
--- ----------------------------
--- Records of video
--- ----------------------------
--- INSERT INTO `video` VALUES ('35fa1f2b-1e9d-4edf-ac92-e3070915336f', 'COD挂', '.\\video-upload-dir\\35fa1f2b-1e9d-4edf-ac92-e3070915336f.mp4', 0, 'edf1ec68-1e52-45db-9ace-99c4ab21ca5c');
--- INSERT INTO `video` VALUES ('70f78bce-f1e5-4196-b928-ec7432bf0b0b', 'Inside The Backrooms如何溜窃皮者', '.\\video-upload-dir\\70f78bce-f1e5-4196-b928-ec7432bf0b0b.mp4', 0, 'edf1ec68-1e52-45db-9ace-99c4ab21ca5c');
 
 SET FOREIGN_KEY_CHECKS = 1;
