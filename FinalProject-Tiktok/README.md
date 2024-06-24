@@ -1,43 +1,47 @@
-# API FinalProject Tiktok
+# Tiktok
 
-## 1. Task Division
+* 完整项目的百度云链接：
+  * 链接：https://pan.baidu.com/s/1jJLtHGUCUun9qKsTmfW1vA?pwd=2333 
+  * 提取码：2333 
+  * **包含视频！**
+* 目前此项目中不包含视频！
 
-* Docs
-  * 需求方案 —— @ZY_MC
-  * 技术设计文档 —— @YXHXianYu
-  * 测试文档 —— @黎苏
-* Frontend —— @YXHXianYu
-* Backend
-  * ~~Framework —— @YXHXianYu~~
-  * ~~User Management —— @YXHXianYu~~
-    * Login
-    * Register
-    * Logout
-  * ~~Video Management —— @YXHXianYu~~
-    * Create A Video
-    * Query My Video (分页)
-    * Delete My Video
-    * Need Authority Check
-  * ~~Video Recommendation —— @Fooliqi~~
-    * Most Likes Video (Every video is only recommended once)
-    * Last Video, Next Video
-    * Like Button
-  * ~~Database —— @YXHXianYu~~
-    * Save Video
-  * ~~Log —— @lovekdl~~
-    * Every API's Response Time
-    * Every API's Input & Output
-  * ~~Security —— @YXHXianYu~~
-  * Bonus —— @Fooliqi
-    * 对视频内容取哈希值，在存视频时，若哈希值匹配，则不重新存视频，减小重复视频的开销
-* 答辩 —— @YXHXianYu
+## 1. 目录介绍
 
-## 2. Bonus
+* `frontend` 前端
+* `backend` 后端，业务服务器
+* `backend_authorization` 后端，鉴权服务器
+* `docs` 文档及数据库结构文件
+  * 包含：需求文档、技术设计文档
 
-* 安全性
-  * Authentication身份认证：提供了用户系统，并且在日志中添加了请求方的IP
-  * Authorization授权：给用户提供了会话功能.....
-  * AccessControl访问控制：API.......
-  * Auditable可审计性：通过AOP和AspectJ实现了日志模块，会记录所有接收到的请求的时间、输入、处理接口、输出、耗时
-  * AssetProtection资产保护：.....
-* 哈希值存储文件，TODO
+
+## 2. 功能点完成概况
+
+* 完成了 **所有基本功能**
+* Bonus
+  * 分布式：后端分为业务服务器和鉴权服务器
+  * RPC：使用 thrift 在后端之间实现远程过程调用
+  * 哈希去重：储存视频时，通过比较文件哈希值，避免储存多个相同视频
+* 总结
+  * 规范性：严格遵守 RESTful API
+  * 可迭代性：引入API版本号
+  * 安全性：根据 5A原则 进行自查
+    * 身份认证：日志包含IP与鉴权信息、用户管理
+    * 授权：非admin用户无法查看其他用户信息，无法删除他人视频……
+    * 访问控制：基于UUID与特殊用户进行访问控制
+    * 可审计性：完善的日志（输入/输出/耗时）
+    * 资产保护：密码不明文传输、不明文存储、密码和业务服务器隔离
+
+## 3. 团队分工
+
+* 【24%】俞贤皓（组长）
+  * 前后端框架搭建、基础功能实现、哈希去重、项目管理、答辩及其PPT、文档
+* 【24%】邓人嘉
+  * 我的视频管理模块、日志模块（AOP、LogBack）、安全性保证（Token、鉴权）
+* 【26%】付家齐
+  * 分布式系统与鉴权服务器搭建、RPC实现（thrift）
+* 【13%】谷雅丰
+  * 文档、辅助
+* 【13%】杨临悠
+  * 文档、辅助
+* 注：贡献比由组长决定，且得到了组内所有成员同意

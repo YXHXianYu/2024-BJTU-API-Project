@@ -33,7 +33,7 @@ body{
 }
 #building {
   /* background: url("~@/assets/余霞成绮 [4k].png"); */
-  background: url("~@/assets/bg.png");
+  background: url("~@/assets/修女会.jpg");
   width: 100%;
   height: 100%;
   position:fixed;
